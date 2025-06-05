@@ -508,7 +508,6 @@ Berdasarkan hasil analisis:
 ## 🔗 Tautan Penting
 
 *   **Source Code & Datasets (GitHub)**: [https://github.com/josgiv/UAS_PerancanganBigData_WEKA_SalesData](https://github.com/josgiv/UAS_PerancanganBigData_WEKA_SalesData)
-*   **Video Penjelasan Proyek (Google Drive)**: [https://drive.google.com/drive/folders/11GrpKR-I49BJud8RYYyhKxhOKMoZKFqV](https://drive.google.com/drive/folders/11GrpKR-I49BJud8RYYyhKxhOKMoZKFqV)
 *   **Dataset Asli**: [https://bit.ly/UASPBD2025](https://bit.ly/UASPBD2025)
 
 ---
