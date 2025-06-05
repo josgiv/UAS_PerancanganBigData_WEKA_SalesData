@@ -1,0 +1,4 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+Datasets/Full_Datasets/MasterData/MasterDataSales.csv filter=lfs diff=lfs merge=lfs -text
