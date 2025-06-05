@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.ubm.ac.id/wp-content/uploads/2020/02/Logo-UBM-Universitas-Bunda-Mulia-Original-PNG.png" alt="Universitas Bunda Mulia Logo" width="150"/>
+  <img src="https://www.ubm.ac.id/wp-content/uploads/2019/11/long-logo.png" alt="Universitas Bunda Mulia Logo" width="150"/>
 </p>
 
 <h1 align="center">Laporan Ujian Akhir Semester: Perancangan Big Data</h1>
