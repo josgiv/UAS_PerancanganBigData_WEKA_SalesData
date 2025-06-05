@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     FinalDataSales-weka.filters.unsupervised.attribute.StringToNominal-R7
+Instances:    177909
+Attributes:   7
+              offer_price
+              original_price
+              off_now
+              total_ratings
+              total_reviews
+              product_rating
+              description
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 241.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 14.48 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      177509               99.7752 %
+Incorrectly Classified Instances       400                0.2248 %
+Kappa statistic                          0.9963
+Mean absolute error                      0.006 
+Root mean squared error                  0.0379
+Relative absolute error                  1.9731 %
+Root relative squared error              9.7347 %
+Total Number of Instances           177909     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.002    0.994      0.997    0.995      0.994    1.000     1.000     Average
+                 0.933    0.000    0.963      0.933    0.948      0.947    1.000     0.991     Bad
+                 0.999    0.001    0.999      0.999    0.999      0.998    1.000     1.000     Good
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     No Rating
+Weighted Avg.    0.998    0.001    0.998      0.998    0.998      0.997    1.000     1.000     
+
+=== Confusion Matrix ===
+
+     a     b     c     d   <-- classified as
+ 37993    52    78     0 |     a = Average
+   134  1984     9     0 |     b = Bad
+   103    24 96233     0 |     c = Good
+     0     0     0 41299 |     d = No Rating
+
