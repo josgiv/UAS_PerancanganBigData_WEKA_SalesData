@@ -1,6 +1,3 @@
-Baik, ini adalah draf `README.md` yang sangat rinci dan kompleks berdasarkan laporan dan kode yang Anda berikan. Saya mencoba untuk memasukkan sebanyak mungkin detail yang relevan dan menyajikannya dalam format Markdown yang terstruktur.
-
-```markdown
 <p align="center">
   <img src="https://www.ubm.ac.id/wp-content/uploads/2020/02/Logo-UBM-Universitas-Bunda-Mulia-Original-PNG.png" alt="Universitas Bunda Mulia Logo" width="150"/>
 </p>
@@ -519,4 +516,3 @@ Berdasarkan hasil analisis:
 <p align="center">
   Proyek ini diselesaikan sebagai bagian dari Ujian Akhir Semester mata kuliah Perancangan Big Data.
 </p>
-```
