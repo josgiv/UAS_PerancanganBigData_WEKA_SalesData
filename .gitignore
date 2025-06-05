@@ -1,8 +1,10 @@
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
-Video_Explanation/36230035_JosiaGivenSantoso_PenjelasanWEKA.mp4
 # Ignore dataset folders
 Datasets/
+
+# Ignore video explanation (file besar, tidak perlu di-push ke GitHub)
+Video_Explanation/
+
+# (Opsional) Ignore temporary files, notebook checkpoints, dll.
+*.ipynb_checkpoints
+__pycache__/
+*.pyc
