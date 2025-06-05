@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     FinalDataSales-weka.filters.unsupervised.attribute.Remove-R5,7
+Instances:    177909
+Attributes:   5
+              offer_price
+              original_price
+              off_now
+Ignored:
+              total_ratings
+              product_rating
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 15
+Within cluster sum of squared errors: 1837.971045406246
+
+Initial starting points (random):
+
+Cluster 0: 268,1099,75
+Cluster 1: 11999,14999,20
+Cluster 2: 212900,212900,0
+Cluster 3: 26499,31999,17
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                Cluster#
+Attribute          Full Data           0           1           2           3
+                  (177909.0)   (60395.0)   (65126.0)    (5815.0)   (46573.0)
+============================================================================
+offer_price       20098.9327   2629.8462  20395.4603 160050.7326  24863.7987
+original_price    27781.9923   7150.5207  31273.5119  201138.566  28009.1743
+off_now              38.1218     64.9584     35.0089       19.21     10.0348
+
+
+
+
+Time taken to build model (full training data) : 0.47 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       60395 ( 34%)
+1       65126 ( 37%)
+2        5815 (  3%)
+3       46573 ( 26%)
+

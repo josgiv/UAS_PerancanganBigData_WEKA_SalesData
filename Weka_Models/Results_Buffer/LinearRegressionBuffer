@@ -1,0 +1,38 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     FinalDataSales-weka.filters.unsupervised.attribute.Remove-R5,7
+Instances:    177909
+Attributes:   5
+              offer_price
+              original_price
+              off_now
+              total_ratings
+              product_rating
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+offer_price =
+
+      0.7353 * original_price +
+   -151.772  * off_now +
+      0.0043 * total_ratings +
+   -352.7806 * product_rating +
+   6506.871 
+
+Time taken to build model: 0.15 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.976 
+Mean absolute error                   3933.8591
+Root mean squared error               7801.4445
+Relative absolute error                 18.0795 %
+Root relative squared error             21.7622 %
+Total Number of Instances           177909     
+

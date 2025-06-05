@@ -1,0 +1,6 @@
+fastexcel
+polars
+pandas
+numpy
+xlsxwriter
+openpyxl

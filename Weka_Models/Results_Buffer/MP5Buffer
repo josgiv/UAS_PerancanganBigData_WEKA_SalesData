@@ -1,0 +1,3517 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.M5P -R -M 3.0 -num-decimal-places 4
+Relation:     FinalDataSales-weka.filters.unsupervised.attribute.Remove-R5,7
+Instances:    177909
+Attributes:   5
+              offer_price
+              original_price
+              off_now
+              total_ratings
+              product_rating
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+M5 pruned regression tree:
+(using smoothed linear models)
+
+original_price <= 30099.5 : 
+|   original_price <= 6004.5 : LM1 (76043/2.553%)
+|   original_price >  6004.5 : 
+|   |   original_price <= 16524.5 : 
+|   |   |   off_now <= 35.5 : 
+|   |   |   |   original_price <= 11122.5 : LM2 (6190/4.403%)
+|   |   |   |   original_price >  11122.5 : 
+|   |   |   |   |   off_now <= 18.5 : LM3 (3924/4.574%)
+|   |   |   |   |   off_now >  18.5 : LM4 (3846/3.584%)
+|   |   |   off_now >  35.5 : 
+|   |   |   |   original_price <= 9999.5 : LM5 (5931/3.591%)
+|   |   |   |   original_price >  9999.5 : LM6 (6706/4.638%)
+|   |   original_price >  16524.5 : 
+|   |   |   off_now <= 44.5 : 
+|   |   |   |   original_price <= 22537.5 : 
+|   |   |   |   |   off_now <= 25.5 : LM7 (9073/4.951%)
+|   |   |   |   |   off_now >  25.5 : LM8 (4689/4.096%)
+|   |   |   |   original_price >  22537.5 : 
+|   |   |   |   |   off_now <= 20.5 : 
+|   |   |   |   |   |   original_price <= 27209 : 
+|   |   |   |   |   |   |   off_now <= 8.5 : LM9 (666/3.704%)
+|   |   |   |   |   |   |   off_now >  8.5 : LM10 (1573/3.679%)
+|   |   |   |   |   |   original_price >  27209 : 
+|   |   |   |   |   |   |   off_now <= 9.5 : LM11 (455/3.453%)
+|   |   |   |   |   |   |   off_now >  9.5 : LM12 (733/3.31%)
+|   |   |   |   |   off_now >  20.5 : 
+|   |   |   |   |   |   off_now <= 31.5 : LM13 (2678/4.985%)
+|   |   |   |   |   |   off_now >  31.5 : LM14 (2203/4.82%)
+|   |   |   off_now >  44.5 : 
+|   |   |   |   off_now <= 53.5 : 
+|   |   |   |   |   original_price <= 24994.5 : LM15 (1306/3.457%)
+|   |   |   |   |   original_price >  24994.5 : LM16 (503/3.189%)
+|   |   |   |   off_now >  53.5 : LM17 (4155/4.373%)
+original_price >  30099.5 : 
+|   original_price <= 93748 : 
+|   |   original_price <= 60894.5 : 
+|   |   |   original_price <= 42045 : 
+|   |   |   |   off_now <= 33.5 : 
+|   |   |   |   |   off_now <= 14.5 : 
+|   |   |   |   |   |   original_price <= 37850 : 
+|   |   |   |   |   |   |   original_price <= 33538.5 : 
+|   |   |   |   |   |   |   |   off_now <= 7.5 : LM18 (196/3.347%)
+|   |   |   |   |   |   |   |   off_now >  7.5 : LM19 (260/2.882%)
+|   |   |   |   |   |   |   original_price >  33538.5 : 
+|   |   |   |   |   |   |   |   off_now <= 7.5 : LM20 (297/3.441%)
+|   |   |   |   |   |   |   |   off_now >  7.5 : LM21 (379/3.482%)
+|   |   |   |   |   |   original_price >  37850 : 
+|   |   |   |   |   |   |   off_now <= 5.5 : LM22 (279/3.861%)
+|   |   |   |   |   |   |   off_now >  5.5 : LM23 (439/3.676%)
+|   |   |   |   |   off_now >  14.5 : 
+|   |   |   |   |   |   original_price <= 34999.5 : 
+|   |   |   |   |   |   |   off_now <= 24.5 : LM24 (1062/3.891%)
+|   |   |   |   |   |   |   off_now >  24.5 : LM25 (783/3.176%)
+|   |   |   |   |   |   original_price >  34999.5 : 
+|   |   |   |   |   |   |   off_now <= 21.5 : 
+|   |   |   |   |   |   |   |   original_price <= 37999.5 : LM26 (518/2.511%)
+|   |   |   |   |   |   |   |   original_price >  37999.5 : LM27 (415/2.768%)
+|   |   |   |   |   |   |   off_now >  21.5 : LM28 (1347/4.653%)
+|   |   |   |   off_now >  33.5 : 
+|   |   |   |   |   off_now <= 48.5 : 
+|   |   |   |   |   |   original_price <= 37999.5 : LM29 (1342/4.69%)
+|   |   |   |   |   |   original_price >  37999.5 : LM30 (559/4.784%)
+|   |   |   |   |   off_now >  48.5 : 
+|   |   |   |   |   |   off_now <= 64.5 : LM31 (558/4.116%)
+|   |   |   |   |   |   off_now >  64.5 : LM32 (212/2.641%)
+|   |   |   original_price >  42045 : 
+|   |   |   |   off_now <= 25.5 : 
+|   |   |   |   |   original_price <= 51781 : 
+|   |   |   |   |   |   off_now <= 12.5 : 
+|   |   |   |   |   |   |   original_price <= 45695 : 
+|   |   |   |   |   |   |   |   off_now <= 5.5 : LM33 (244/3.511%)
+|   |   |   |   |   |   |   |   off_now >  5.5 : LM34 (246/3.341%)
+|   |   |   |   |   |   |   original_price >  45695 : 
+|   |   |   |   |   |   |   |   off_now <= 6.5 : LM35 (449/4.636%)
+|   |   |   |   |   |   |   |   off_now >  6.5 : LM36 (264/4.797%)
+|   |   |   |   |   |   off_now >  12.5 : 
+|   |   |   |   |   |   |   original_price <= 46550 : 
+|   |   |   |   |   |   |   |   off_now <= 19.5 : LM37 (443/3.452%)
+|   |   |   |   |   |   |   |   off_now >  19.5 : LM38 (560/3.274%)
+|   |   |   |   |   |   |   original_price >  46550 : 
+|   |   |   |   |   |   |   |   off_now <= 19.5 : LM39 (500/3.911%)
+|   |   |   |   |   |   |   |   off_now >  19.5 : LM40 (665/3.219%)
+|   |   |   |   |   original_price >  51781 : 
+|   |   |   |   |   |   off_now <= 12.5 : 
+|   |   |   |   |   |   |   original_price <= 58114 : 
+|   |   |   |   |   |   |   |   off_now <= 6.5 : LM41 (230/4.925%)
+|   |   |   |   |   |   |   |   off_now >  6.5 : LM42 (109/4.3%)
+|   |   |   |   |   |   |   original_price >  58114 : 
+|   |   |   |   |   |   |   |   off_now <= 3.5 : LM43 (161/1.539%)
+|   |   |   |   |   |   |   |   off_now >  3.5 : LM44 (73/3.979%)
+|   |   |   |   |   |   off_now >  12.5 : 
+|   |   |   |   |   |   |   off_now <= 19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 57700 : LM45 (364/4.398%)
+|   |   |   |   |   |   |   |   original_price >  57700 : LM46 (276/3.232%)
+|   |   |   |   |   |   |   off_now >  19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 56318 : LM47 (501/3.347%)
+|   |   |   |   |   |   |   |   original_price >  56318 : LM48 (651/3.286%)
+|   |   |   |   off_now >  25.5 : 
+|   |   |   |   |   off_now <= 40.5 : 
+|   |   |   |   |   |   original_price <= 52416.5 : 
+|   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   original_price <= 47153 : LM49 (501/2.855%)
+|   |   |   |   |   |   |   |   original_price >  47153 : LM50 (923/3.33%)
+|   |   |   |   |   |   |   off_now >  30.5 : 
+|   |   |   |   |   |   |   |   original_price <= 47999.5 : LM51 (790/3.964%)
+|   |   |   |   |   |   |   |   original_price >  47999.5 : LM52 (917/3.938%)
+|   |   |   |   |   |   original_price >  52416.5 : 
+|   |   |   |   |   |   |   off_now <= 31.5 : 
+|   |   |   |   |   |   |   |   original_price <= 56817 : LM53 (579/3.158%)
+|   |   |   |   |   |   |   |   original_price >  56817 : LM54 (495/3.078%)
+|   |   |   |   |   |   |   off_now >  31.5 : 
+|   |   |   |   |   |   |   |   original_price <= 58363.5 : LM55 (1333/4.026%)
+|   |   |   |   |   |   |   |   original_price >  58363.5 : LM56 (1057/3.961%)
+|   |   |   |   |   off_now >  40.5 : 
+|   |   |   |   |   |   off_now <= 50.5 : 
+|   |   |   |   |   |   |   original_price <= 55799.5 : 
+|   |   |   |   |   |   |   |   original_price <= 49250 : LM57 (385/4.043%)
+|   |   |   |   |   |   |   |   original_price >  49250 : LM58 (610/4.604%)
+|   |   |   |   |   |   |   original_price >  55799.5 : LM59 (382/4.442%)
+|   |   |   |   |   |   off_now >  50.5 : 
+|   |   |   |   |   |   |   off_now <= 63.5 : 
+|   |   |   |   |   |   |   |   original_price <= 49994.5 : LM60 (167/4.82%)
+|   |   |   |   |   |   |   |   original_price >  49994.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 57.5 : LM61 (111/4.194%)
+|   |   |   |   |   |   |   |   |   off_now >  57.5 : LM62 (34/4.44%)
+|   |   |   |   |   |   |   off_now >  63.5 : LM63 (112/3.764%)
+|   |   original_price >  60894.5 : 
+|   |   |   off_now <= 24.5 : 
+|   |   |   |   original_price <= 74095 : 
+|   |   |   |   |   off_now <= 17.5 : 
+|   |   |   |   |   |   off_now <= 5.5 : 
+|   |   |   |   |   |   |   original_price <= 65528.5 : LM64 (264/4.073%)
+|   |   |   |   |   |   |   original_price >  65528.5 : LM65 (368/4.983%)
+|   |   |   |   |   |   off_now >  5.5 : 
+|   |   |   |   |   |   |   original_price <= 67911 : 
+|   |   |   |   |   |   |   |   off_now <= 10.5 : LM66 (217/3.879%)
+|   |   |   |   |   |   |   |   off_now >  10.5 : LM67 (209/4.788%)
+|   |   |   |   |   |   |   original_price >  67911 : 
+|   |   |   |   |   |   |   |   off_now <= 12.5 : LM68 (180/4.795%)
+|   |   |   |   |   |   |   |   off_now >  12.5 : LM69 (349/3.977%)
+|   |   |   |   |   off_now >  17.5 : 
+|   |   |   |   |   |   original_price <= 66999.5 : LM70 (427/4.611%)
+|   |   |   |   |   |   original_price >  66999.5 : 
+|   |   |   |   |   |   |   off_now <= 20.5 : LM71 (167/4.374%)
+|   |   |   |   |   |   |   off_now >  20.5 : LM72 (181/3.859%)
+|   |   |   |   original_price >  74095 : 
+|   |   |   |   |   off_now <= 12.5 : 
+|   |   |   |   |   |   original_price <= 80725 : 
+|   |   |   |   |   |   |   off_now <= 4.5 : 
+|   |   |   |   |   |   |   |   original_price <= 77058.5 : LM73 (137/2.484%)
+|   |   |   |   |   |   |   |   original_price >  77058.5 : LM74 (96/4.161%)
+|   |   |   |   |   |   |   off_now >  4.5 : 
+|   |   |   |   |   |   |   |   original_price <= 76952.5 : LM75 (124/3.988%)
+|   |   |   |   |   |   |   |   original_price >  76952.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 10.5 : LM76 (126/3.459%)
+|   |   |   |   |   |   |   |   |   off_now >  10.5 : LM77 (58/1.971%)
+|   |   |   |   |   |   original_price >  80725 : 
+|   |   |   |   |   |   |   off_now <= 7.5 : 
+|   |   |   |   |   |   |   |   original_price <= 84949.5 : LM78 (227/4.994%)
+|   |   |   |   |   |   |   |   original_price >  84949.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 89745 : LM79 (131/4.062%)
+|   |   |   |   |   |   |   |   |   original_price >  89745 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 3 : LM80 (79/2.807%)
+|   |   |   |   |   |   |   |   |   |   off_now >  3 : LM81 (69/2.564%)
+|   |   |   |   |   |   |   off_now >  7.5 : 
+|   |   |   |   |   |   |   |   original_price <= 85999.5 : LM82 (160/4.133%)
+|   |   |   |   |   |   |   |   original_price >  85999.5 : LM83 (118/4.765%)
+|   |   |   |   |   off_now >  12.5 : 
+|   |   |   |   |   |   original_price <= 83404.5 : 
+|   |   |   |   |   |   |   off_now <= 19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 78090 : LM84 (221/4.321%)
+|   |   |   |   |   |   |   |   original_price >  78090 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : LM85 (163/3.992%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : LM86 (167/2.953%)
+|   |   |   |   |   |   |   off_now >  19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 79814.5 : LM87 (159/3.424%)
+|   |   |   |   |   |   |   |   original_price >  79814.5 : LM88 (246/3.784%)
+|   |   |   |   |   |   original_price >  83404.5 : 
+|   |   |   |   |   |   |   off_now <= 19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 88995 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : LM89 (123/4.267%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : LM90 (138/3.469%)
+|   |   |   |   |   |   |   |   original_price >  88995 : LM91 (201/4.288%)
+|   |   |   |   |   |   |   off_now >  19.5 : 
+|   |   |   |   |   |   |   |   original_price <= 85994.5 : LM92 (90/2.358%)
+|   |   |   |   |   |   |   |   original_price >  85994.5 : LM93 (291/4.909%)
+|   |   |   off_now >  24.5 : 
+|   |   |   |   off_now <= 36.5 : 
+|   |   |   |   |   original_price <= 75645 : 
+|   |   |   |   |   |   original_price <= 69945 : 
+|   |   |   |   |   |   |   off_now <= 29.5 : 
+|   |   |   |   |   |   |   |   original_price <= 65250 : LM94 (346/3.231%)
+|   |   |   |   |   |   |   |   original_price >  65250 : LM95 (214/2.836%)
+|   |   |   |   |   |   |   off_now >  29.5 : 
+|   |   |   |   |   |   |   |   original_price <= 64450 : LM96 (171/3.603%)
+|   |   |   |   |   |   |   |   original_price >  64450 : LM97 (582/3.525%)
+|   |   |   |   |   |   original_price >  69945 : 
+|   |   |   |   |   |   |   off_now <= 31.5 : LM98 (1044/4.854%)
+|   |   |   |   |   |   |   off_now >  31.5 : LM99 (677/3.057%)
+|   |   |   |   |   original_price >  75645 : 
+|   |   |   |   |   |   original_price <= 82792 : 
+|   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   original_price <= 77945 : LM100 (223/2.873%)
+|   |   |   |   |   |   |   |   original_price >  77945 : LM101 (255/4.218%)
+|   |   |   |   |   |   |   off_now >  30.5 : LM102 (440/4.459%)
+|   |   |   |   |   |   original_price >  82792 : 
+|   |   |   |   |   |   |   off_now <= 31.5 : 
+|   |   |   |   |   |   |   |   original_price <= 85275 : LM103 (244/3.78%)
+|   |   |   |   |   |   |   |   original_price >  85275 : 
+|   |   |   |   |   |   |   |   |   off_now <= 28.5 : LM104 (156/3.94%)
+|   |   |   |   |   |   |   |   |   off_now >  28.5 : LM105 (151/4.73%)
+|   |   |   |   |   |   |   off_now >  31.5 : 
+|   |   |   |   |   |   |   |   original_price <= 92795 : 
+|   |   |   |   |   |   |   |   |   original_price <= 87579 : LM106 (132/3.483%)
+|   |   |   |   |   |   |   |   |   original_price >  87579 : LM107 (159/4.437%)
+|   |   |   |   |   |   |   |   original_price >  92795 : LM108 (132/0.108%)
+|   |   |   |   off_now >  36.5 : 
+|   |   |   |   |   off_now <= 46.5 : 
+|   |   |   |   |   |   original_price <= 76005 : 
+|   |   |   |   |   |   |   original_price <= 64994.5 : LM109 (602/4.401%)
+|   |   |   |   |   |   |   original_price >  64994.5 : 
+|   |   |   |   |   |   |   |   original_price <= 70245 : LM110 (679/3.835%)
+|   |   |   |   |   |   |   |   original_price >  70245 : LM111 (343/4.912%)
+|   |   |   |   |   |   original_price >  76005 : 
+|   |   |   |   |   |   |   original_price <= 85595 : 
+|   |   |   |   |   |   |   |   off_now <= 40.5 : LM112 (198/4.004%)
+|   |   |   |   |   |   |   |   off_now >  40.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 81250 : LM113 (89/4.331%)
+|   |   |   |   |   |   |   |   |   original_price >  81250 : LM114 (31/2.037%)
+|   |   |   |   |   |   |   original_price >  85595 : 
+|   |   |   |   |   |   |   |   off_now <= 39.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 91844.5 : LM115 (56/3.44%)
+|   |   |   |   |   |   |   |   |   original_price >  91844.5 : LM116 (33/0.882%)
+|   |   |   |   |   |   |   |   off_now >  39.5 : LM117 (147/3.868%)
+|   |   |   |   |   off_now >  46.5 : 
+|   |   |   |   |   |   off_now <= 57.5 : 
+|   |   |   |   |   |   |   original_price <= 78370 : 
+|   |   |   |   |   |   |   |   original_price <= 65890 : 
+|   |   |   |   |   |   |   |   |   off_now <= 49.5 : LM118 (138/2.72%)
+|   |   |   |   |   |   |   |   |   off_now >  49.5 : LM119 (48/2.928%)
+|   |   |   |   |   |   |   |   original_price >  65890 : 
+|   |   |   |   |   |   |   |   |   off_now <= 51.5 : LM120 (157/3.996%)
+|   |   |   |   |   |   |   |   |   off_now >  51.5 : LM121 (121/4.349%)
+|   |   |   |   |   |   |   original_price >  78370 : 
+|   |   |   |   |   |   |   |   off_now <= 54.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 84949.5 : LM122 (61/3.49%)
+|   |   |   |   |   |   |   |   |   original_price >  84949.5 : LM123 (57/4.381%)
+|   |   |   |   |   |   |   |   off_now >  54.5 : LM124 (30/3.374%)
+|   |   |   |   |   |   off_now >  57.5 : 
+|   |   |   |   |   |   |   off_now <= 66.5 : 
+|   |   |   |   |   |   |   |   original_price <= 82499.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 67495 : LM125 (13/0.129%)
+|   |   |   |   |   |   |   |   |   original_price >  67495 : LM126 (49/3.017%)
+|   |   |   |   |   |   |   |   original_price >  82499.5 : LM127 (44/3.794%)
+|   |   |   |   |   |   |   off_now >  66.5 : 
+|   |   |   |   |   |   |   |   off_now <= 68.5 : LM128 (118/0.893%)
+|   |   |   |   |   |   |   |   off_now >  68.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 83994.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 73.5 : LM129 (12/4.667%)
+|   |   |   |   |   |   |   |   |   |   off_now >  73.5 : LM130 (12/1.516%)
+|   |   |   |   |   |   |   |   |   original_price >  83994.5 : LM131 (7/0%)
+|   original_price >  93748 : 
+|   |   original_price <= 169994.5 : 
+|   |   |   off_now <= 18.5 : 
+|   |   |   |   original_price <= 124391 : 
+|   |   |   |   |   original_price <= 108445 : 
+|   |   |   |   |   |   off_now <= 4.5 : 
+|   |   |   |   |   |   |   original_price <= 103850 : 
+|   |   |   |   |   |   |   |   original_price <= 98906 : 
+|   |   |   |   |   |   |   |   |   original_price <= 95789.5 : LM132 (40/2.063%)
+|   |   |   |   |   |   |   |   |   original_price >  95789.5 : LM133 (59/4.802%)
+|   |   |   |   |   |   |   |   original_price >  98906 : LM134 (139/4.489%)
+|   |   |   |   |   |   |   original_price >  103850 : LM135 (177/4.342%)
+|   |   |   |   |   |   off_now >  4.5 : 
+|   |   |   |   |   |   |   original_price <= 99890 : 
+|   |   |   |   |   |   |   |   off_now <= 11.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 95869.5 : LM136 (29/0.806%)
+|   |   |   |   |   |   |   |   |   original_price >  95869.5 : LM137 (41/4.07%)
+|   |   |   |   |   |   |   |   off_now >  11.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : LM138 (58/3.18%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 97940 : LM139 (29/3.257%)
+|   |   |   |   |   |   |   |   |   |   original_price >  97940 : LM140 (27/1.033%)
+|   |   |   |   |   |   |   original_price >  99890 : 
+|   |   |   |   |   |   |   |   off_now <= 10.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 103150 : LM141 (49/3.809%)
+|   |   |   |   |   |   |   |   |   original_price >  103150 : LM142 (30/2.79%)
+|   |   |   |   |   |   |   |   off_now >  10.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 104275 : LM143 (92/4.81%)
+|   |   |   |   |   |   |   |   |   original_price >  104275 : LM144 (108/4.493%)
+|   |   |   |   |   original_price >  108445 : 
+|   |   |   |   |   |   off_now <= 3.5 : 
+|   |   |   |   |   |   |   original_price <= 116184.5 : 
+|   |   |   |   |   |   |   |   original_price <= 111445 : LM145 (71/3.426%)
+|   |   |   |   |   |   |   |   original_price >  111445 : LM146 (75/2.279%)
+|   |   |   |   |   |   |   original_price >  116184.5 : 
+|   |   |   |   |   |   |   |   original_price <= 120503 : LM147 (145/3.857%)
+|   |   |   |   |   |   |   |   original_price >  120503 : LM148 (46/2.25%)
+|   |   |   |   |   |   off_now >  3.5 : 
+|   |   |   |   |   |   |   off_now <= 14.5 : 
+|   |   |   |   |   |   |   |   original_price <= 115659.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 8.5 : LM149 (65/4.939%)
+|   |   |   |   |   |   |   |   |   off_now >  8.5 : LM150 (89/4.756%)
+|   |   |   |   |   |   |   |   original_price >  115659.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 120705.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 9.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 7.5 : LM151 (12/2.962%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  7.5 : LM152 (23/2.612%)
+|   |   |   |   |   |   |   |   |   |   off_now >  9.5 : LM153 (38/4.112%)
+|   |   |   |   |   |   |   |   |   original_price >  120705.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 13 : LM154 (37/3.526%)
+|   |   |   |   |   |   |   |   |   |   off_now >  13 : LM155 (13/0.661%)
+|   |   |   |   |   |   |   off_now >  14.5 : 
+|   |   |   |   |   |   |   |   original_price <= 117478.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 111247 : LM156 (27/1.873%)
+|   |   |   |   |   |   |   |   |   original_price >  111247 : LM157 (77/4.788%)
+|   |   |   |   |   |   |   |   original_price >  117478.5 : LM158 (131/3.731%)
+|   |   |   |   original_price >  124391 : 
+|   |   |   |   |   original_price <= 146312.5 : 
+|   |   |   |   |   |   off_now <= 11.5 : 
+|   |   |   |   |   |   |   original_price <= 133900 : 
+|   |   |   |   |   |   |   |   off_now <= 0.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 128445 : LM159 (82/2.527%)
+|   |   |   |   |   |   |   |   |   original_price >  128445 : LM160 (115/3.35%)
+|   |   |   |   |   |   |   |   off_now >  0.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 130086.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 7.5 : LM161 (37/3.208%)
+|   |   |   |   |   |   |   |   |   |   off_now >  7.5 : LM162 (10/2.471%)
+|   |   |   |   |   |   |   |   |   original_price >  130086.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 6.5 : LM163 (15/1.197%)
+|   |   |   |   |   |   |   |   |   |   off_now >  6.5 : LM164 (4/0.121%)
+|   |   |   |   |   |   |   original_price >  133900 : 
+|   |   |   |   |   |   |   |   off_now <= 1 : 
+|   |   |   |   |   |   |   |   |   original_price <= 136950 : LM165 (38/1.433%)
+|   |   |   |   |   |   |   |   |   original_price >  136950 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 141900 : LM166 (47/2.352%)
+|   |   |   |   |   |   |   |   |   |   original_price >  141900 : LM167 (27/3.505%)
+|   |   |   |   |   |   |   |   off_now >  1 : 
+|   |   |   |   |   |   |   |   |   original_price <= 145059 : 
+|   |   |   |   |   |   |   |   |   |   product_rating <= 4.55 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 4.5 : LM168 (9/3.542%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  4.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings <= 2.5 : LM169 (21/1.883%)
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings >  2.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 141945 : LM170 (6/3.176%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  141945 : LM171 (4/0.121%)
+|   |   |   |   |   |   |   |   |   |   product_rating >  4.55 : LM172 (21/1.233%)
+|   |   |   |   |   |   |   |   |   original_price >  145059 : LM173 (28/1.14%)
+|   |   |   |   |   |   off_now >  11.5 : 
+|   |   |   |   |   |   |   original_price <= 131226 : 
+|   |   |   |   |   |   |   |   total_ratings <= 430.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 14.5 : LM174 (37/4.175%)
+|   |   |   |   |   |   |   |   |   off_now >  14.5 : LM175 (33/3.436%)
+|   |   |   |   |   |   |   |   total_ratings >  430.5 : LM176 (18/0%)
+|   |   |   |   |   |   |   original_price >  131226 : 
+|   |   |   |   |   |   |   |   original_price <= 142494.5 : 
+|   |   |   |   |   |   |   |   |   total_ratings <= 855.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 16.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 133990 : LM177 (14/3.389%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  133990 : LM178 (37/4.799%)
+|   |   |   |   |   |   |   |   |   |   off_now >  16.5 : LM179 (23/1.624%)
+|   |   |   |   |   |   |   |   |   total_ratings >  855.5 : LM180 (19/0%)
+|   |   |   |   |   |   |   |   original_price >  142494.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 143445 : LM181 (11/0.108%)
+|   |   |   |   |   |   |   |   |   original_price >  143445 : LM182 (20/4.051%)
+|   |   |   |   |   original_price >  146312.5 : 
+|   |   |   |   |   |   off_now <= 7 : 
+|   |   |   |   |   |   |   original_price <= 157445 : 
+|   |   |   |   |   |   |   |   original_price <= 151145 : 
+|   |   |   |   |   |   |   |   |   original_price <= 149400 : LM183 (47/4.728%)
+|   |   |   |   |   |   |   |   |   original_price >  149400 : LM184 (69/0.565%)
+|   |   |   |   |   |   |   |   original_price >  151145 : LM185 (69/4.924%)
+|   |   |   |   |   |   |   original_price >  157445 : 
+|   |   |   |   |   |   |   |   original_price <= 165900 : 
+|   |   |   |   |   |   |   |   |   original_price <= 158900 : LM186 (20/0.139%)
+|   |   |   |   |   |   |   |   |   original_price >  158900 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 2.5 : LM187 (32/4.558%)
+|   |   |   |   |   |   |   |   |   |   off_now >  2.5 : LM188 (11/3.849%)
+|   |   |   |   |   |   |   |   original_price >  165900 : LM189 (18/4.099%)
+|   |   |   |   |   |   off_now >  7 : 
+|   |   |   |   |   |   |   original_price <= 157990 : 
+|   |   |   |   |   |   |   |   off_now <= 12.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 9.5 : LM190 (12/4.817%)
+|   |   |   |   |   |   |   |   |   off_now >  9.5 : LM191 (26/1.935%)
+|   |   |   |   |   |   |   |   off_now >  12.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 149445 : LM192 (14/4.98%)
+|   |   |   |   |   |   |   |   |   original_price >  149445 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 16.5 : LM193 (13/5.141%)
+|   |   |   |   |   |   |   |   |   |   off_now >  16.5 : LM194 (27/3.957%)
+|   |   |   |   |   |   |   original_price >  157990 : 
+|   |   |   |   |   |   |   |   off_now <= 13 : 
+|   |   |   |   |   |   |   |   |   original_price <= 161945 : LM195 (4/0%)
+|   |   |   |   |   |   |   |   |   original_price >  161945 : LM196 (13/0.136%)
+|   |   |   |   |   |   |   |   off_now >  13 : LM197 (29/4.885%)
+|   |   |   off_now >  18.5 : 
+|   |   |   |   original_price <= 121693.5 : 
+|   |   |   |   |   off_now <= 34.5 : 
+|   |   |   |   |   |   original_price <= 110274.5 : 
+|   |   |   |   |   |   |   off_now <= 24.5 : 
+|   |   |   |   |   |   |   |   original_price <= 103357.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 97285 : LM198 (63/3.972%)
+|   |   |   |   |   |   |   |   |   original_price >  97285 : LM199 (197/4.541%)
+|   |   |   |   |   |   |   |   original_price >  103357.5 : LM200 (124/4.648%)
+|   |   |   |   |   |   |   off_now >  24.5 : 
+|   |   |   |   |   |   |   |   original_price <= 102044.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 31.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 101840 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 97940 : LM201 (168/4.231%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  97940 : LM202 (61/4.736%)
+|   |   |   |   |   |   |   |   |   |   original_price >  101840 : LM203 (62/0%)
+|   |   |   |   |   |   |   |   |   off_now >  31.5 : LM204 (85/3.591%)
+|   |   |   |   |   |   |   |   original_price >  102044.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 27.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 105536 : LM205 (19/2.061%)
+|   |   |   |   |   |   |   |   |   |   original_price >  105536 : LM206 (38/2.89%)
+|   |   |   |   |   |   |   |   |   off_now >  27.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 29.5 : LM207 (82/4.15%)
+|   |   |   |   |   |   |   |   |   |   off_now >  29.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 105940 : LM208 (23/4.201%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  105940 : LM209 (54/3.674%)
+|   |   |   |   |   |   original_price >  110274.5 : 
+|   |   |   |   |   |   |   off_now <= 26.5 : 
+|   |   |   |   |   |   |   |   off_now <= 22.5 : LM210 (177/4.819%)
+|   |   |   |   |   |   |   |   off_now >  22.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 115676.5 : LM211 (80/1.465%)
+|   |   |   |   |   |   |   |   |   original_price >  115676.5 : LM212 (73/4.764%)
+|   |   |   |   |   |   |   off_now >  26.5 : 
+|   |   |   |   |   |   |   |   off_now <= 31.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 117490 : LM213 (75/1.962%)
+|   |   |   |   |   |   |   |   |   original_price >  117490 : LM214 (21/4.741%)
+|   |   |   |   |   |   |   |   off_now >  31.5 : LM215 (66/4.983%)
+|   |   |   |   |   off_now >  34.5 : 
+|   |   |   |   |   |   off_now <= 47.5 : 
+|   |   |   |   |   |   |   original_price <= 102044.5 : 
+|   |   |   |   |   |   |   |   off_now <= 39.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 96944.5 : LM216 (61/2.246%)
+|   |   |   |   |   |   |   |   |   original_price >  96944.5 : LM217 (129/4.741%)
+|   |   |   |   |   |   |   |   off_now >  39.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 41.5 : LM218 (59/4.808%)
+|   |   |   |   |   |   |   |   |   off_now >  41.5 : LM219 (20/4.092%)
+|   |   |   |   |   |   |   original_price >  102044.5 : 
+|   |   |   |   |   |   |   |   original_price <= 102390 : LM220 (145/0.023%)
+|   |   |   |   |   |   |   |   original_price >  102390 : 
+|   |   |   |   |   |   |   |   |   off_now <= 41.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 112945 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 36.5 : LM221 (27/0.076%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  36.5 : LM222 (39/4.764%)
+|   |   |   |   |   |   |   |   |   |   original_price >  112945 : 
+|   |   |   |   |   |   |   |   |   |   |   total_ratings <= 4136 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 38.5 : LM223 (50/4.683%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  38.5 : LM224 (28/2.694%)
+|   |   |   |   |   |   |   |   |   |   |   total_ratings >  4136 : LM225 (22/0.012%)
+|   |   |   |   |   |   |   |   |   off_now >  41.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 117100 : 
+|   |   |   |   |   |   |   |   |   |   |   total_ratings <= 1.5 : LM226 (11/0%)
+|   |   |   |   |   |   |   |   |   |   |   total_ratings >  1.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 103790 : LM227 (8/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  103790 : LM228 (27/4.516%)
+|   |   |   |   |   |   |   |   |   |   original_price >  117100 : LM229 (36/4.051%)
+|   |   |   |   |   |   off_now >  47.5 : 
+|   |   |   |   |   |   |   off_now <= 59.5 : 
+|   |   |   |   |   |   |   |   original_price <= 102000 : LM230 (93/1.195%)
+|   |   |   |   |   |   |   |   original_price >  102000 : 
+|   |   |   |   |   |   |   |   |   off_now <= 51.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 113950 : LM231 (28/3.655%)
+|   |   |   |   |   |   |   |   |   |   original_price >  113950 : LM232 (30/2.481%)
+|   |   |   |   |   |   |   |   |   off_now >  51.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 118490 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 114799 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 111299 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 54.5 : LM233 (9/1.845%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  54.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 108490 : LM234 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  108490 : LM235 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  111299 : LM236 (5/1.004%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  114799 : LM237 (8/0.011%)
+|   |   |   |   |   |   |   |   |   |   original_price >  118490 : LM238 (32/4.938%)
+|   |   |   |   |   |   |   off_now >  59.5 : 
+|   |   |   |   |   |   |   |   off_now <= 65.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 101495 : LM239 (13/0.012%)
+|   |   |   |   |   |   |   |   |   original_price >  101495 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 61 : LM240 (9/1.17%)
+|   |   |   |   |   |   |   |   |   |   off_now >  61 : LM241 (12/5.144%)
+|   |   |   |   |   |   |   |   off_now >  65.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 110490 : LM242 (10/4.421%)
+|   |   |   |   |   |   |   |   |   original_price >  110490 : LM243 (19/2.468%)
+|   |   |   |   original_price >  121693.5 : 
+|   |   |   |   |   off_now <= 35.5 : 
+|   |   |   |   |   |   original_price <= 146592 : 
+|   |   |   |   |   |   |   off_now <= 26.5 : 
+|   |   |   |   |   |   |   |   original_price <= 130904.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 19.5 : LM244 (192/0.724%)
+|   |   |   |   |   |   |   |   |   off_now >  19.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 128658 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 22.5 : LM245 (36/4.06%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  22.5 : LM246 (63/4.02%)
+|   |   |   |   |   |   |   |   |   |   original_price >  128658 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 20.5 : LM247 (30/0.134%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  20.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 23.5 : LM248 (40/1.416%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  23.5 : LM249 (18/2.665%)
+|   |   |   |   |   |   |   |   original_price >  130904.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 21.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 135999.5 : LM250 (24/2.573%)
+|   |   |   |   |   |   |   |   |   |   original_price >  135999.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 140239 : LM251 (14/2.231%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  140239 : LM252 (23/2.359%)
+|   |   |   |   |   |   |   |   |   off_now >  21.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 137044.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 23 : LM253 (14/1.1%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  23 : LM254 (23/1.46%)
+|   |   |   |   |   |   |   |   |   |   original_price >  137044.5 : LM255 (112/3.602%)
+|   |   |   |   |   |   |   off_now >  26.5 : 
+|   |   |   |   |   |   |   |   original_price <= 136445 : 
+|   |   |   |   |   |   |   |   |   off_now <= 32.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 130040 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 127746 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 27.5 : LM256 (17/2.137%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  27.5 : LM257 (21/4.283%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  127746 : LM258 (69/2.841%)
+|   |   |   |   |   |   |   |   |   |   original_price >  130040 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 28.5 : LM259 (49/1.309%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  28.5 : LM260 (50/3.203%)
+|   |   |   |   |   |   |   |   |   off_now >  32.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 131345 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 127450 : LM261 (14/3.941%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  127450 : LM262 (16/2.602%)
+|   |   |   |   |   |   |   |   |   |   original_price >  131345 : LM263 (25/2.915%)
+|   |   |   |   |   |   |   |   original_price >  136445 : 
+|   |   |   |   |   |   |   |   |   off_now <= 29.5 : 
+|   |   |   |   |   |   |   |   |   |   total_ratings <= 3.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 139128 : LM264 (23/2.471%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  139128 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 143945 : LM265 (6/1.465%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  143945 : LM266 (6/0%)
+|   |   |   |   |   |   |   |   |   |   total_ratings >  3.5 : LM267 (42/1.533%)
+|   |   |   |   |   |   |   |   |   off_now >  29.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 139994.5 : LM268 (60/4.609%)
+|   |   |   |   |   |   |   |   |   |   original_price >  139994.5 : LM269 (117/3.914%)
+|   |   |   |   |   |   original_price >  146592 : 
+|   |   |   |   |   |   |   off_now <= 24.5 : 
+|   |   |   |   |   |   |   |   original_price <= 159445 : 
+|   |   |   |   |   |   |   |   |   original_price <= 149322.5 : LM270 (17/2.12%)
+|   |   |   |   |   |   |   |   |   original_price >  149322.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 155490 : LM271 (25/4.773%)
+|   |   |   |   |   |   |   |   |   |   original_price >  155490 : LM272 (8/0.092%)
+|   |   |   |   |   |   |   |   original_price >  159445 : 
+|   |   |   |   |   |   |   |   |   off_now <= 21.5 : LM273 (45/3.618%)
+|   |   |   |   |   |   |   |   |   off_now >  21.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 165490 : LM274 (23/3.858%)
+|   |   |   |   |   |   |   |   |   |   original_price >  165490 : LM275 (28/2.19%)
+|   |   |   |   |   |   |   off_now >  24.5 : 
+|   |   |   |   |   |   |   |   original_price <= 155713.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   |   |   total_ratings <= 28.5 : LM276 (110/3.844%)
+|   |   |   |   |   |   |   |   |   |   total_ratings >  28.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 149999.5 : LM277 (14/0.138%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  149999.5 : LM278 (16/4.015%)
+|   |   |   |   |   |   |   |   |   off_now >  30.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 32.5 : LM279 (11/2.323%)
+|   |   |   |   |   |   |   |   |   |   off_now >  32.5 : LM280 (36/3.669%)
+|   |   |   |   |   |   |   |   original_price >  155713.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 157990 : LM281 (30/0.131%)
+|   |   |   |   |   |   |   |   |   |   original_price >  157990 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 160945 : LM282 (12/1.219%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  160945 : 
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings <= 3101.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 26.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 165490 : LM283 (4/0.485%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  165490 : LM284 (6/2.372%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  26.5 : LM285 (25/3.906%)
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings >  3101.5 : LM286 (9/0%)
+|   |   |   |   |   |   |   |   |   off_now >  30.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 163445 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 34.5 : LM287 (14/4.41%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  34.5 : LM288 (6/2.234%)
+|   |   |   |   |   |   |   |   |   |   original_price >  163445 : LM289 (44/4.079%)
+|   |   |   |   |   off_now >  35.5 : 
+|   |   |   |   |   |   off_now <= 43.5 : 
+|   |   |   |   |   |   |   original_price <= 139133 : 
+|   |   |   |   |   |   |   |   original_price <= 125895 : 
+|   |   |   |   |   |   |   |   |   off_now <= 37.5 : LM290 (35/1.952%)
+|   |   |   |   |   |   |   |   |   off_now >  37.5 : LM291 (71/4.103%)
+|   |   |   |   |   |   |   |   original_price >  125895 : 
+|   |   |   |   |   |   |   |   |   off_now <= 40 : LM292 (73/4.983%)
+|   |   |   |   |   |   |   |   |   off_now >  40 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 136774 : LM293 (25/3.905%)
+|   |   |   |   |   |   |   |   |   |   original_price >  136774 : LM294 (14/0.114%)
+|   |   |   |   |   |   |   original_price >  139133 : 
+|   |   |   |   |   |   |   |   off_now <= 37.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 147514 : LM295 (106/1.688%)
+|   |   |   |   |   |   |   |   |   original_price >  147514 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 152240 : LM296 (34/0.721%)
+|   |   |   |   |   |   |   |   |   |   original_price >  152240 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 162494.5 : LM297 (11/3.132%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  162494.5 : LM298 (7/0.126%)
+|   |   |   |   |   |   |   |   off_now >  37.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 149999.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 42.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 145945 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 141500 : LM299 (14/0.641%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  141500 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 39.5 : LM300 (7/0.482%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  39.5 : LM301 (10/4.393%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  145945 : LM302 (63/4.195%)
+|   |   |   |   |   |   |   |   |   |   off_now >  42.5 : LM303 (57/0.109%)
+|   |   |   |   |   |   |   |   |   original_price >  149999.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 150900 : LM304 (17/0.127%)
+|   |   |   |   |   |   |   |   |   |   original_price >  150900 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 163490 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 39 : LM305 (6/1.395%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  39 : LM306 (12/0.737%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  163490 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 42 : LM307 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  42 : LM308 (5/0%)
+|   |   |   |   |   |   off_now >  43.5 : 
+|   |   |   |   |   |   |   original_price <= 142545 : 
+|   |   |   |   |   |   |   |   off_now <= 51.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 45.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 127445 : LM309 (13/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  127445 : LM310 (25/4.063%)
+|   |   |   |   |   |   |   |   |   off_now >  45.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 47 : LM311 (52/1.737%)
+|   |   |   |   |   |   |   |   |   |   off_now >  47 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 138995 : LM312 (23/3.348%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  138995 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 49.5 : LM313 (8/0.135%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  49.5 : LM314 (6/0%)
+|   |   |   |   |   |   |   |   off_now >  51.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 65 : LM315 (19/10.585%)
+|   |   |   |   |   |   |   |   |   off_now >  65 : LM316 (14/2.066%)
+|   |   |   |   |   |   |   original_price >  142545 : 
+|   |   |   |   |   |   |   |   off_now <= 50.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 161445 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 157490 : 
+|   |   |   |   |   |   |   |   |   |   |   total_ratings <= 16 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 45.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 146500 : LM317 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  146500 : LM318 (8/1.481%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  45.5 : LM319 (14/3.55%)
+|   |   |   |   |   |   |   |   |   |   |   total_ratings >  16 : LM320 (24/2.784%)
+|   |   |   |   |   |   |   |   |   |   original_price >  157490 : LM321 (17/0.008%)
+|   |   |   |   |   |   |   |   |   original_price >  161445 : LM322 (38/4.869%)
+|   |   |   |   |   |   |   |   off_now >  50.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 164990 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 52.5 : LM323 (13/3.433%)
+|   |   |   |   |   |   |   |   |   |   off_now >  52.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 54.5 : LM324 (10/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  54.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   product_rating <= 4.35 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 57.5 : LM325 (10/4.356%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  57.5 : LM326 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   product_rating >  4.35 : LM327 (6/0%)
+|   |   |   |   |   |   |   |   |   original_price >  164990 : LM328 (14/0%)
+|   |   original_price >  169994.5 : 
+|   |   |   original_price <= 285490 : 
+|   |   |   |   off_now <= 21.5 : 
+|   |   |   |   |   original_price <= 208990 : 
+|   |   |   |   |   |   off_now <= 6.5 : 
+|   |   |   |   |   |   |   original_price <= 181445 : 
+|   |   |   |   |   |   |   |   original_price <= 173763 : LM329 (44/4.362%)
+|   |   |   |   |   |   |   |   original_price >  173763 : LM330 (38/4.059%)
+|   |   |   |   |   |   |   original_price >  181445 : 
+|   |   |   |   |   |   |   |   original_price <= 196400 : 
+|   |   |   |   |   |   |   |   |   original_price <= 189945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 1 : LM331 (23/3.867%)
+|   |   |   |   |   |   |   |   |   |   off_now >  1 : LM332 (6/0.13%)
+|   |   |   |   |   |   |   |   |   original_price >  189945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 1 : LM333 (17/2.765%)
+|   |   |   |   |   |   |   |   |   |   off_now >  1 : LM334 (6/3.637%)
+|   |   |   |   |   |   |   |   original_price >  196400 : 
+|   |   |   |   |   |   |   |   |   off_now <= 2 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 201445 : LM335 (21/1.06%)
+|   |   |   |   |   |   |   |   |   |   original_price >  201445 : LM336 (19/3.013%)
+|   |   |   |   |   |   |   |   |   off_now >  2 : LM337 (15/1.14%)
+|   |   |   |   |   |   off_now >  6.5 : 
+|   |   |   |   |   |   |   original_price <= 191483.5 : 
+|   |   |   |   |   |   |   |   original_price <= 179450 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 12 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 172895 : LM338 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  172895 : LM339 (7/0.138%)
+|   |   |   |   |   |   |   |   |   |   off_now >  12 : LM340 (32/4.123%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 175490 : LM341 (27/4.687%)
+|   |   |   |   |   |   |   |   |   |   original_price >  175490 : LM342 (26/0.163%)
+|   |   |   |   |   |   |   |   original_price >  179450 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 12 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 183559.5 : LM343 (6/4.184%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  183559.5 : LM344 (8/0.687%)
+|   |   |   |   |   |   |   |   |   |   off_now >  12 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 184494.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 179994.5 : LM345 (6/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  179994.5 : LM346 (15/1.274%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  184494.5 : LM347 (15/3.254%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : LM348 (35/3.35%)
+|   |   |   |   |   |   |   original_price >  191483.5 : 
+|   |   |   |   |   |   |   |   off_now <= 13.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 197449.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 11 : LM349 (3/7.957%)
+|   |   |   |   |   |   |   |   |   |   off_now >  11 : LM350 (10/1.053%)
+|   |   |   |   |   |   |   |   |   original_price >  197449.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 204336 : LM351 (22/2.143%)
+|   |   |   |   |   |   |   |   |   |   original_price >  204336 : LM352 (6/1.975%)
+|   |   |   |   |   |   |   |   off_now >  13.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 17.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 203490 : LM353 (63/4.862%)
+|   |   |   |   |   |   |   |   |   |   original_price >  203490 : LM354 (29/0.125%)
+|   |   |   |   |   |   |   |   |   off_now >  17.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 202490 : LM355 (23/2.208%)
+|   |   |   |   |   |   |   |   |   |   original_price >  202490 : LM356 (23/3.602%)
+|   |   |   |   |   original_price >  208990 : 
+|   |   |   |   |   |   off_now <= 8.5 : 
+|   |   |   |   |   |   |   original_price <= 229749.5 : 
+|   |   |   |   |   |   |   |   off_now <= 6 : 
+|   |   |   |   |   |   |   |   |   original_price <= 217949.5 : 
+|   |   |   |   |   |   |   |   |   |   total_ratings <= 101.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 212375 : 
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings <= 2 : LM357 (4/12.804%)
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings >  2 : LM358 (13/1.035%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  212375 : LM359 (8/0.238%)
+|   |   |   |   |   |   |   |   |   |   total_ratings >  101.5 : LM360 (17/0.138%)
+|   |   |   |   |   |   |   |   |   original_price >  217949.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 2 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 221445 : LM361 (10/0.084%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  221445 : LM362 (23/4.262%)
+|   |   |   |   |   |   |   |   |   |   off_now >  2 : LM363 (13/3.901%)
+|   |   |   |   |   |   |   |   off_now >  6 : 
+|   |   |   |   |   |   |   |   |   original_price <= 224990 : LM364 (14/0.114%)
+|   |   |   |   |   |   |   |   |   original_price >  224990 : LM365 (11/0.108%)
+|   |   |   |   |   |   |   original_price >  229749.5 : 
+|   |   |   |   |   |   |   |   original_price <= 252494.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 2 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 235490 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 230445 : LM366 (15/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  230445 : LM367 (11/2.369%)
+|   |   |   |   |   |   |   |   |   |   original_price >  235490 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 240945 : LM368 (40/2.124%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  240945 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 243350.5 : LM369 (13/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  243350.5 : LM370 (9/4.595%)
+|   |   |   |   |   |   |   |   |   off_now >  2 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 243490 : LM371 (28/6.442%)
+|   |   |   |   |   |   |   |   |   |   original_price >  243490 : LM372 (31/0.647%)
+|   |   |   |   |   |   |   |   original_price >  252494.5 : 
+|   |   |   |   |   |   |   |   |   total_ratings <= 1 : LM373 (29/2.577%)
+|   |   |   |   |   |   |   |   |   total_ratings >  1 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 267400 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 2.5 : LM374 (13/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  2.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 6 : LM375 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  6 : LM376 (6/0.139%)
+|   |   |   |   |   |   |   |   |   |   original_price >  267400 : LM377 (11/0%)
+|   |   |   |   |   |   off_now >  8.5 : 
+|   |   |   |   |   |   |   original_price <= 252490 : 
+|   |   |   |   |   |   |   |   off_now <= 15.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 236963.5 : 
+|   |   |   |   |   |   |   |   |   |   total_ratings <= 9 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 9.5 : LM378 (11/1.124%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  9.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 230951 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 217255 : LM379 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  217255 : LM380 (11/11.58%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  230951 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 13.5 : LM381 (8/2.268%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  13.5 : LM382 (12/0.936%)
+|   |   |   |   |   |   |   |   |   |   total_ratings >  9 : LM383 (15/0.891%)
+|   |   |   |   |   |   |   |   |   original_price >  236963.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 12 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 238848 : LM384 (13/1.099%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  238848 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 241445 : LM385 (7/0.356%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  241445 : LM386 (4/0.121%)
+|   |   |   |   |   |   |   |   |   |   off_now >  12 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 241700 : LM387 (6/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  241700 : LM388 (2/0%)
+|   |   |   |   |   |   |   |   off_now >  15.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 229490 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 224944.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 19.5 : LM389 (39/3.644%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  19.5 : LM390 (10/3.18%)
+|   |   |   |   |   |   |   |   |   |   original_price >  224944.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 18 : LM391 (10/1.266%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  18 : LM392 (27/2.95%)
+|   |   |   |   |   |   |   |   |   original_price >  229490 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 242990 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 18.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 233990 : LM393 (31/1.825%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  233990 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 17 : LM394 (6/4.184%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  17 : LM395 (15/0.123%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  18.5 : LM396 (28/2.055%)
+|   |   |   |   |   |   |   |   |   |   original_price >  242990 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 19.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 249945 : LM397 (11/2.512%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  249945 : LM398 (8/0.135%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  19.5 : LM399 (26/2.106%)
+|   |   |   |   |   |   |   original_price >  252490 : 
+|   |   |   |   |   |   |   |   original_price <= 263495 : 
+|   |   |   |   |   |   |   |   |   off_now <= 17.5 : LM400 (21/14.318%)
+|   |   |   |   |   |   |   |   |   off_now >  17.5 : LM401 (8/0.092%)
+|   |   |   |   |   |   |   |   original_price >  263495 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 277490 : LM402 (13/0.709%)
+|   |   |   |   |   |   |   |   |   |   original_price >  277490 : LM403 (4/0.121%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : LM404 (33/2.853%)
+|   |   |   |   off_now >  21.5 : 
+|   |   |   |   |   off_now <= 39.5 : 
+|   |   |   |   |   |   original_price <= 210319.5 : 
+|   |   |   |   |   |   |   off_now <= 33.5 : 
+|   |   |   |   |   |   |   |   original_price <= 193990 : 
+|   |   |   |   |   |   |   |   |   off_now <= 24.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 179227 : LM405 (16/2.704%)
+|   |   |   |   |   |   |   |   |   |   original_price >  179227 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 183363 : LM406 (31/3.849%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  183363 : LM407 (15/3.398%)
+|   |   |   |   |   |   |   |   |   off_now >  24.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 179994.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 27.5 : LM408 (19/2.815%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  27.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 30 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   total_ratings <= 31 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 176990 : LM409 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  176990 : LM410 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   total_ratings >  31 : LM411 (10/0.139%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  30 : LM412 (8/0.135%)
+|   |   |   |   |   |   |   |   |   |   original_price >  179994.5 : 
+|   |   |   |   |   |   |   |   |   |   |   total_ratings <= 15.5 : LM413 (46/2.343%)
+|   |   |   |   |   |   |   |   |   |   |   total_ratings >  15.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 185990 : LM414 (6/5.302%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  185990 : LM415 (8/0%)
+|   |   |   |   |   |   |   |   original_price >  193990 : 
+|   |   |   |   |   |   |   |   |   off_now <= 27.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 199995 : LM416 (33/4.289%)
+|   |   |   |   |   |   |   |   |   |   original_price >  199995 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 206490 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 202495 : LM417 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  202495 : LM418 (8/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  206490 : LM419 (5/0%)
+|   |   |   |   |   |   |   |   |   off_now >  27.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 29.5 : LM420 (19/4.318%)
+|   |   |   |   |   |   |   |   |   |   off_now >  29.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 205945 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 200994.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 32.5 : LM421 (14/4.937%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  32.5 : LM422 (9/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  200994.5 : LM423 (7/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  205945 : LM424 (14/2.837%)
+|   |   |   |   |   |   |   off_now >  33.5 : 
+|   |   |   |   |   |   |   |   original_price <= 199949.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 37.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 180945 : LM425 (11/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  180945 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 190990 : 
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings <= 3 : LM426 (11/0.128%)
+|   |   |   |   |   |   |   |   |   |   |   |   total_ratings >  3 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 185490 : LM427 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  185490 : LM428 (4/4.107%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  190990 : LM429 (5/4.528%)
+|   |   |   |   |   |   |   |   |   off_now >  37.5 : LM430 (20/0.718%)
+|   |   |   |   |   |   |   |   original_price >  199949.5 : LM431 (17/0.011%)
+|   |   |   |   |   |   original_price >  210319.5 : 
+|   |   |   |   |   |   |   original_price <= 244945 : 
+|   |   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   |   total_ratings <= 7.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 238895 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 28.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 219940 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 215495 : LM432 (6/5.412%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  215495 : LM433 (13/0.918%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  219940 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 27.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 225940 : LM434 (4/0.121%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  225940 : LM435 (10/3.982%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  27.5 : LM436 (7/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  28.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 224945 : LM437 (7/1.372%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  224945 : LM438 (6/0.946%)
+|   |   |   |   |   |   |   |   |   |   original_price >  238895 : LM439 (20/3.805%)
+|   |   |   |   |   |   |   |   |   total_ratings >  7.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 213445 : LM440 (10/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  213445 : LM441 (37/4.884%)
+|   |   |   |   |   |   |   |   off_now >  30.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 232445 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 34.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 229945 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 217445 : LM442 (13/3.605%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  217445 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 222240 : LM443 (10/3.958%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  222240 : LM444 (5/1.448%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  229945 : LM445 (12/0.009%)
+|   |   |   |   |   |   |   |   |   |   off_now >  34.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 229495 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 221940 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 38 : LM446 (7/1.26%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  38 : LM447 (6/1.767%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  221940 : LM448 (7/2.623%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  229495 : LM449 (11/0%)
+|   |   |   |   |   |   |   |   |   original_price >  232445 : 
+|   |   |   |   |   |   |   |   |   |   total_ratings <= 2.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 36 : LM450 (8/10.295%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  36 : LM451 (11/4.933%)
+|   |   |   |   |   |   |   |   |   |   total_ratings >  2.5 : LM452 (22/0%)
+|   |   |   |   |   |   |   original_price >  244945 : 
+|   |   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 251990 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 25 : LM453 (11/3.299%)
+|   |   |   |   |   |   |   |   |   |   off_now >  25 : LM454 (5/2.841%)
+|   |   |   |   |   |   |   |   |   original_price >  251990 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 23.5 : LM455 (6/2.041%)
+|   |   |   |   |   |   |   |   |   |   off_now >  23.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 254445 : LM456 (10/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  254445 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 267885 : LM457 (4/1.395%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  267885 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 29 : LM458 (3/0.131%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  29 : LM459 (4/1.768%)
+|   |   |   |   |   |   |   |   off_now >  30.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 267400 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 35 : 
+|   |   |   |   |   |   |   |   |   |   |   total_ratings <= 1.5 : LM460 (14/4.384%)
+|   |   |   |   |   |   |   |   |   |   |   total_ratings >  1.5 : LM461 (10/3.121%)
+|   |   |   |   |   |   |   |   |   |   off_now >  35 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 247900 : LM462 (7/0.321%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  247900 : LM463 (17/4.72%)
+|   |   |   |   |   |   |   |   |   original_price >  267400 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 37 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 282490 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 270950 : LM464 (16/2.895%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  270950 : LM465 (11/6.584%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  282490 : LM466 (11/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  37 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 277445 : LM467 (14/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  277445 : LM468 (16/3.068%)
+|   |   |   |   |   off_now >  39.5 : 
+|   |   |   |   |   |   original_price <= 206445 : 
+|   |   |   |   |   |   |   off_now <= 50.5 : 
+|   |   |   |   |   |   |   |   total_ratings <= 75 : 
+|   |   |   |   |   |   |   |   |   original_price <= 186945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 48 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 46.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 44.5 : LM469 (10/1.153%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  44.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 180445 : LM470 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  180445 : LM471 (8/1.395%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  46.5 : LM472 (8/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  48 : LM473 (8/1.35%)
+|   |   |   |   |   |   |   |   |   original_price >  186945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 46.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 42 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 196445 : LM474 (2/2.929%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  196445 : LM475 (3/1.451%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  42 : LM476 (7/3.287%)
+|   |   |   |   |   |   |   |   |   |   off_now >  46.5 : LM477 (25/3.796%)
+|   |   |   |   |   |   |   |   total_ratings >  75 : LM478 (34/3.192%)
+|   |   |   |   |   |   |   off_now >  50.5 : 
+|   |   |   |   |   |   |   |   off_now <= 61.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 56 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 53.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 182490 : LM479 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  182490 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 192494.5 : LM480 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  192494.5 : LM481 (2/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  53.5 : LM482 (10/0%)
+|   |   |   |   |   |   |   |   |   off_now >  56 : LM483 (14/0.012%)
+|   |   |   |   |   |   |   |   off_now >  61.5 : LM484 (16/3.937%)
+|   |   |   |   |   |   original_price >  206445 : 
+|   |   |   |   |   |   |   off_now <= 51.5 : 
+|   |   |   |   |   |   |   |   original_price <= 237374.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 43.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 214990 : LM485 (15/3.509%)
+|   |   |   |   |   |   |   |   |   |   original_price >  214990 : LM486 (27/2.411%)
+|   |   |   |   |   |   |   |   |   off_now >  43.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 216449.5 : LM487 (16/4.278%)
+|   |   |   |   |   |   |   |   |   |   original_price >  216449.5 : LM488 (51/4.628%)
+|   |   |   |   |   |   |   |   original_price >  237374.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 44.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 259900 : LM489 (12/1.375%)
+|   |   |   |   |   |   |   |   |   |   original_price >  259900 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 41.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 267445 : LM490 (3/1.315%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  267445 : LM491 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  41.5 : LM492 (8/1.908%)
+|   |   |   |   |   |   |   |   |   off_now >  44.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 264945 : LM493 (58/9.579%)
+|   |   |   |   |   |   |   |   |   |   original_price >  264945 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 46.5 : LM494 (11/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  46.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 269945 : LM495 (11/0.805%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  269945 : LM496 (4/2.082%)
+|   |   |   |   |   |   |   off_now >  51.5 : 
+|   |   |   |   |   |   |   |   product_rating <= 4.35 : 
+|   |   |   |   |   |   |   |   |   off_now <= 54 : LM497 (13/0.118%)
+|   |   |   |   |   |   |   |   |   off_now >  54 : LM498 (17/4.462%)
+|   |   |   |   |   |   |   |   product_rating >  4.35 : 
+|   |   |   |   |   |   |   |   |   off_now <= 54.5 : LM499 (11/0%)
+|   |   |   |   |   |   |   |   |   off_now >  54.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 61.5 : LM500 (24/1.377%)
+|   |   |   |   |   |   |   |   |   |   off_now >  61.5 : LM501 (7/8.708%)
+|   |   |   original_price >  285490 : 
+|   |   |   |   original_price <= 399450 : 
+|   |   |   |   |   off_now <= 27.5 : 
+|   |   |   |   |   |   original_price <= 328445 : 
+|   |   |   |   |   |   |   off_now <= 12.5 : 
+|   |   |   |   |   |   |   |   off_now <= 4 : 
+|   |   |   |   |   |   |   |   |   original_price <= 305400 : LM502 (24/1.39%)
+|   |   |   |   |   |   |   |   |   original_price >  305400 : LM503 (13/0%)
+|   |   |   |   |   |   |   |   off_now >  4 : 
+|   |   |   |   |   |   |   |   |   original_price <= 303535 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 289535 : LM504 (5/0.137%)
+|   |   |   |   |   |   |   |   |   |   original_price >  289535 : LM505 (13/1.099%)
+|   |   |   |   |   |   |   |   |   original_price >  303535 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 9 : LM506 (14/0.126%)
+|   |   |   |   |   |   |   |   |   |   off_now >  9 : LM507 (9/1.515%)
+|   |   |   |   |   |   |   off_now >  12.5 : 
+|   |   |   |   |   |   |   |   original_price <= 303490 : 
+|   |   |   |   |   |   |   |   |   original_price <= 298490 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 295535 : LM508 (12/6.518%)
+|   |   |   |   |   |   |   |   |   |   original_price >  295535 : LM509 (23/0.128%)
+|   |   |   |   |   |   |   |   |   original_price >  298490 : LM510 (26/2.544%)
+|   |   |   |   |   |   |   |   original_price >  303490 : 
+|   |   |   |   |   |   |   |   |   off_now <= 16.5 : LM511 (42/2.545%)
+|   |   |   |   |   |   |   |   |   off_now >  16.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 22 : LM512 (16/9.457%)
+|   |   |   |   |   |   |   |   |   |   off_now >  22 : LM513 (8/0.135%)
+|   |   |   |   |   |   original_price >  328445 : 
+|   |   |   |   |   |   |   off_now <= 24.5 : 
+|   |   |   |   |   |   |   |   original_price <= 338990 : 
+|   |   |   |   |   |   |   |   |   original_price <= 329945 : LM514 (15/0.575%)
+|   |   |   |   |   |   |   |   |   original_price >  329945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 6.5 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 332990 : LM515 (7/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  332990 : LM516 (16/0.109%)
+|   |   |   |   |   |   |   |   |   |   off_now >  6.5 : LM517 (12/0.131%)
+|   |   |   |   |   |   |   |   original_price >  338990 : 
+|   |   |   |   |   |   |   |   |   off_now <= 11.5 : LM518 (44/27.778%)
+|   |   |   |   |   |   |   |   |   off_now >  11.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 369995 : LM519 (29/2.635%)
+|   |   |   |   |   |   |   |   |   |   original_price >  369995 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 18 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 390445 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 15.5 : LM520 (4/7.019%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  15.5 : LM521 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  390445 : LM522 (17/1.002%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  18 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 391950 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 21.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   off_now <= 20.5 : LM523 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  20.5 : LM524 (9/0.088%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   off_now >  21.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 384445 : LM525 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  384445 : LM526 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  391950 : LM527 (5/0.137%)
+|   |   |   |   |   |   |   off_now >  24.5 : 
+|   |   |   |   |   |   |   |   total_ratings <= 11 : 
+|   |   |   |   |   |   |   |   |   original_price <= 372445 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 339945 : LM528 (7/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  339945 : LM529 (12/2.321%)
+|   |   |   |   |   |   |   |   |   original_price >  372445 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 389450 : LM530 (13/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  389450 : LM531 (8/2.826%)
+|   |   |   |   |   |   |   |   total_ratings >  11 : LM532 (13/0%)
+|   |   |   |   |   off_now >  27.5 : 
+|   |   |   |   |   |   off_now <= 42 : 
+|   |   |   |   |   |   |   original_price <= 322490 : 
+|   |   |   |   |   |   |   |   off_now <= 30 : 
+|   |   |   |   |   |   |   |   |   original_price <= 302400 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 28.5 : LM533 (2/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  28.5 : LM534 (4/0%)
+|   |   |   |   |   |   |   |   |   original_price >  302400 : LM535 (15/3.58%)
+|   |   |   |   |   |   |   |   off_now >  30 : 
+|   |   |   |   |   |   |   |   |   off_now <= 35.5 : LM536 (16/9.346%)
+|   |   |   |   |   |   |   |   |   off_now >  35.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 299994.5 : LM537 (6/10.084%)
+|   |   |   |   |   |   |   |   |   |   original_price >  299994.5 : LM538 (22/8.525%)
+|   |   |   |   |   |   |   original_price >  322490 : 
+|   |   |   |   |   |   |   |   off_now <= 31.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 365445 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 30 : 
+|   |   |   |   |   |   |   |   |   |   |   original_price <= 337445 : LM539 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   original_price >  337445 : LM540 (11/3.744%)
+|   |   |   |   |   |   |   |   |   |   off_now >  30 : LM541 (5/0.014%)
+|   |   |   |   |   |   |   |   |   original_price >  365445 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 379950 : LM542 (2/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  379950 : LM543 (3/0.013%)
+|   |   |   |   |   |   |   |   off_now >  31.5 : 
+|   |   |   |   |   |   |   |   |   original_price <= 377445 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 34.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 33.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   original_price <= 350445 : LM544 (7/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   original_price >  350445 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price <= 355490 : LM545 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   original_price >  355490 : LM546 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  33.5 : LM547 (21/0.293%)
+|   |   |   |   |   |   |   |   |   |   off_now >  34.5 : 
+|   |   |   |   |   |   |   |   |   |   |   off_now <= 35.5 : LM548 (11/0.08%)
+|   |   |   |   |   |   |   |   |   |   |   off_now >  35.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   off_now <= 40 : LM549 (6/3.41%)
+|   |   |   |   |   |   |   |   |   |   |   |   off_now >  40 : LM550 (4/0%)
+|   |   |   |   |   |   |   |   |   original_price >  377445 : LM551 (14/0%)
+|   |   |   |   |   |   off_now >  42 : 
+|   |   |   |   |   |   |   original_price <= 314990 : 
+|   |   |   |   |   |   |   |   off_now <= 54 : 
+|   |   |   |   |   |   |   |   |   off_now <= 47 : LM552 (8/6.968%)
+|   |   |   |   |   |   |   |   |   off_now >  47 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 48.5 : LM553 (4/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  48.5 : LM554 (12/8.028%)
+|   |   |   |   |   |   |   |   off_now >  54 : 
+|   |   |   |   |   |   |   |   |   total_ratings <= 11 : LM555 (11/0%)
+|   |   |   |   |   |   |   |   |   total_ratings >  11 : LM556 (3/26.3%)
+|   |   |   |   |   |   |   original_price >  314990 : 
+|   |   |   |   |   |   |   |   original_price <= 377445 : LM557 (25/8.108%)
+|   |   |   |   |   |   |   |   original_price >  377445 : 
+|   |   |   |   |   |   |   |   |   off_now <= 48 : LM558 (5/0%)
+|   |   |   |   |   |   |   |   |   off_now >  48 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 50.5 : LM559 (10/3.578%)
+|   |   |   |   |   |   |   |   |   |   off_now >  50.5 : LM560 (8/11.895%)
+|   |   |   |   original_price >  399450 : 
+|   |   |   |   |   original_price <= 428445 : 
+|   |   |   |   |   |   original_price <= 399945 : LM561 (12/0%)
+|   |   |   |   |   |   original_price >  399945 : 
+|   |   |   |   |   |   |   off_now <= 38.5 : 
+|   |   |   |   |   |   |   |   off_now <= 37.5 : 
+|   |   |   |   |   |   |   |   |   off_now <= 33.5 : LM562 (5/32.511%)
+|   |   |   |   |   |   |   |   |   off_now >  33.5 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 36 : LM563 (5/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  36 : LM564 (3/0%)
+|   |   |   |   |   |   |   |   off_now >  37.5 : LM565 (13/0%)
+|   |   |   |   |   |   |   off_now >  38.5 : 
+|   |   |   |   |   |   |   |   original_price <= 404990 : 
+|   |   |   |   |   |   |   |   |   off_now <= 47 : LM566 (6/9.919%)
+|   |   |   |   |   |   |   |   |   off_now >  47 : LM567 (2/0.014%)
+|   |   |   |   |   |   |   |   original_price >  404990 : LM568 (8/0%)
+|   |   |   |   |   original_price >  428445 : 
+|   |   |   |   |   |   original_price <= 594900 : 
+|   |   |   |   |   |   |   off_now <= 7 : 
+|   |   |   |   |   |   |   |   original_price <= 455900 : LM569 (15/0%)
+|   |   |   |   |   |   |   |   original_price >  455900 : LM570 (12/11.477%)
+|   |   |   |   |   |   |   off_now >  7 : 
+|   |   |   |   |   |   |   |   off_now <= 24 : 
+|   |   |   |   |   |   |   |   |   original_price <= 449990 : LM571 (13/0.129%)
+|   |   |   |   |   |   |   |   |   original_price >  449990 : LM572 (46/13.811%)
+|   |   |   |   |   |   |   |   off_now >  24 : 
+|   |   |   |   |   |   |   |   |   original_price <= 569945 : LM573 (20/65.884%)
+|   |   |   |   |   |   |   |   |   original_price >  569945 : 
+|   |   |   |   |   |   |   |   |   |   off_now <= 28.5 : LM574 (5/0%)
+|   |   |   |   |   |   |   |   |   |   off_now >  28.5 : LM575 (4/0%)
+|   |   |   |   |   |   original_price >  594900 : 
+|   |   |   |   |   |   |   original_price <= 674900 : LM576 (9/0%)
+|   |   |   |   |   |   |   original_price >  674900 : 
+|   |   |   |   |   |   |   |   off_now <= 42 : 
+|   |   |   |   |   |   |   |   |   off_now <= 30.5 : 
+|   |   |   |   |   |   |   |   |   |   original_price <= 814900 : LM577 (3/0%)
+|   |   |   |   |   |   |   |   |   |   original_price >  814900 : LM578 (6/0%)
+|   |   |   |   |   |   |   |   |   off_now >  30.5 : LM579 (7/0.014%)
+|   |   |   |   |   |   |   |   off_now >  42 : 
+|   |   |   |   |   |   |   |   |   off_now <= 56 : LM580 (3/0%)
+|   |   |   |   |   |   |   |   |   off_now >  56 : LM581 (3/0%)
+
+LM num: 1
+offer_price = 
+	+ 1070.3355
+
+LM num: 2
+offer_price = 
+	+ 7559.5506
+
+LM num: 3
+offer_price = 
+	+ 12847.3277
+
+LM num: 4
+offer_price = 
+	+ 10049.9805
+
+LM num: 5
+offer_price = 
+	+ 3534.135
+
+LM num: 6
+offer_price = 
+	+ 6227.12
+
+LM num: 7
+offer_price = 
+	+ 16411.7858
+
+LM num: 8
+offer_price = 
+	+ 13186.2943
+
+LM num: 9
+offer_price = 
+	+ 23712.1389
+
+LM num: 10
+offer_price = 
+	+ 20712.6619
+
+LM num: 11
+offer_price = 
+	+ 27748.4899
+
+LM num: 12
+offer_price = 
+	+ 24301.0466
+
+LM num: 13
+offer_price = 
+	+ 18883.2879
+
+LM num: 14
+offer_price = 
+	+ 16313.1477
+
+LM num: 15
+offer_price = 
+	+ 10599.4714
+
+LM num: 16
+offer_price = 
+	+ 14406.9967
+
+LM num: 17
+offer_price = 
+	+ 7627.524
+
+LM num: 18
+offer_price = 
+	+ 30968.9866
+
+LM num: 19
+offer_price = 
+	+ 28277.1591
+
+LM num: 20
+offer_price = 
+	+ 34292.4531
+
+LM num: 21
+offer_price = 
+	+ 31471.4621
+
+LM num: 22
+offer_price = 
+	+ 38854.0153
+
+LM num: 23
+offer_price = 
+	+ 35343.473
+
+LM num: 24
+offer_price = 
+	+ 26205.1502
+
+LM num: 25
+offer_price = 
+	+ 23660.9743
+
+LM num: 26
+offer_price = 
+	+ 29750.1025
+
+LM num: 27
+offer_price = 
+	+ 32649.061
+
+LM num: 28
+offer_price = 
+	+ 28380.9141
+
+LM num: 29
+offer_price = 
+	+ 20408.9656
+
+LM num: 30
+offer_price = 
+	+ 24112.65
+
+LM num: 31
+offer_price = 
+	+ 16343.2112
+
+LM num: 32
+offer_price = 
+	+ 10411.1382
+
+LM num: 33
+offer_price = 
+	+ 43237.2035
+
+LM num: 34
+offer_price = 
+	+ 39799.9737
+
+LM num: 35
+offer_price = 
+	+ 47161.4581
+
+LM num: 36
+offer_price = 
+	+ 44087.1542
+
+LM num: 37
+offer_price = 
+	+ 36908.5468
+
+LM num: 38
+offer_price = 
+	+ 34016.8215
+
+LM num: 39
+offer_price = 
+	+ 40688.1517
+
+LM num: 40
+offer_price = 
+	+ 37911.9831
+
+LM num: 41
+offer_price = 
+	+ 53681.7941
+
+LM num: 42
+offer_price = 
+	+ 50058.5478
+
+LM num: 43
+offer_price = 
+	+ 58619.3564
+
+LM num: 44
+offer_price = 
+	+ 54715.3885
+
+LM num: 45
+offer_price = 
+	+ 45556.5099
+
+LM num: 46
+offer_price = 
+	+ 48848.284
+
+LM num: 47
+offer_price = 
+	+ 42082.5882
+
+LM num: 48
+offer_price = 
+	+ 44674.5997
+
+LM num: 49
+offer_price = 
+	+ 32211.155
+
+LM num: 50
+offer_price = 
+	+ 35462.7659
+
+LM num: 51
+offer_price = 
+	+ 29445.5444
+
+LM num: 52
+offer_price = 
+	+ 32259.4175
+
+LM num: 53
+offer_price = 
+	+ 38662.398
+
+LM num: 54
+offer_price = 
+	+ 41814.9596
+
+LM num: 55
+offer_price = 
+	+ 35655.3486
+
+LM num: 56
+offer_price = 
+	+ 37810.3815
+
+LM num: 57
+offer_price = 
+	+ 25820.6313
+
+LM num: 58
+offer_price = 
+	+ 28942.2134
+
+LM num: 59
+offer_price = 
+	+ 32936.3675
+
+LM num: 60
+offer_price = 
+	+ 20313.1723
+
+LM num: 61
+offer_price = 
+	+ 25127.0884
+
+LM num: 62
+offer_price = 
+	+ 23280.1922
+
+LM num: 63
+offer_price = 
+	+ 15692.456
+
+LM num: 64
+offer_price = 
+	+ 62016.4965
+
+LM num: 65
+offer_price = 
+	+ 68513.3195
+
+LM num: 66
+offer_price = 
+	+ 58745.6379
+
+LM num: 67
+offer_price = 
+	+ 55760.848
+
+LM num: 68
+offer_price = 
+	+ 63016.6325
+
+LM num: 69
+offer_price = 
+	+ 60005.8978
+
+LM num: 70
+offer_price = 
+	+ 50090.7072
+
+LM num: 71
+offer_price = 
+	+ 56411.5211
+
+LM num: 72
+offer_price = 
+	+ 54433.4524
+
+LM num: 73
+offer_price = 
+	+ 74569.5224
+
+LM num: 74
+offer_price = 
+	+ 77492.5009
+
+LM num: 75
+offer_price = 
+	+ 69664.9863
+
+LM num: 76
+offer_price = 
+	+ 72598.5378
+
+LM num: 77
+offer_price = 
+	+ 70107.6621
+
+LM num: 78
+offer_price = 
+	+ 81254.6431
+
+LM num: 79
+offer_price = 
+	+ 84384.9094
+
+LM num: 80
+offer_price = 
+	+ 88350.8641
+
+LM num: 81
+offer_price = 
+	+ 84898.4544
+
+LM num: 82
+offer_price = 
+	+ 75569.876
+
+LM num: 83
+offer_price = 
+	+ 79403.811
+
+LM num: 84
+offer_price = 
+	+ 63784.1981
+
+LM num: 85
+offer_price = 
+	+ 67979.2317
+
+LM num: 86
+offer_price = 
+	+ 65773.9904
+
+LM num: 87
+offer_price = 
+	+ 60274.3626
+
+LM num: 88
+offer_price = 
+	+ 63396.2103
+
+LM num: 89
+offer_price = 
+	+ 72784.7867
+
+LM num: 90
+offer_price = 
+	+ 70964.8261
+
+LM num: 91
+offer_price = 
+	+ 75180.9616
+
+LM num: 92
+offer_price = 
+	+ 65768.9593
+
+LM num: 93
+offer_price = 
+	+ 68839.1008
+
+LM num: 94
+offer_price = 
+	+ 45813.9864
+
+LM num: 95
+offer_price = 
+	+ 49097.865
+
+LM num: 96
+offer_price = 
+	+ 41865.0455
+
+LM num: 97
+offer_price = 
+	+ 44933.2347
+
+LM num: 98
+offer_price = 
+	+ 50273.5156
+
+LM num: 99
+offer_price = 
+	+ 47161.9558
+
+LM num: 100
+offer_price = 
+	+ 55031.4244
+
+LM num: 101
+offer_price = 
+	+ 57530.741
+
+LM num: 102
+offer_price = 
+	+ 52681.8049
+
+LM num: 103
+offer_price = 
+	+ 60288.8712
+
+LM num: 104
+offer_price = 
+	+ 64785.999
+
+LM num: 105
+offer_price = 
+	+ 63056.3611
+
+LM num: 106
+offer_price = 
+	+ 56797.6823
+
+LM num: 107
+offer_price = 
+	+ 59405.545
+
+LM num: 108
+offer_price = 
+	+ 59641.923
+
+LM num: 109
+offer_price = 
+	+ 36781.4543
+
+LM num: 110
+offer_price = 
+	+ 40259.8962
+
+LM num: 111
+offer_price = 
+	+ 42843.1219
+
+LM num: 112
+offer_price = 
+	+ 48555.0398
+
+LM num: 113
+offer_price = 
+	+ 45053.4628
+
+LM num: 114
+offer_price = 
+	+ 46970.6719
+
+LM num: 115
+offer_price = 
+	+ 53840.776
+
+LM num: 116
+offer_price = 
+	+ 55703.0741
+
+LM num: 117
+offer_price = 
+	+ 50607.6342
+
+LM num: 118
+offer_price = 
+	+ 33426.5888
+
+LM num: 119
+offer_price = 
+	+ 31023.8879
+
+LM num: 120
+offer_price = 
+	+ 36347.9858
+
+LM num: 121
+offer_price = 
+	+ 34073.356
+
+LM num: 122
+offer_price = 
+	+ 40417.7599
+
+LM num: 123
+offer_price = 
+	+ 42142.9428
+
+LM num: 124
+offer_price = 
+	+ 38457.1512
+
+LM num: 125
+offer_price = 
+	+ 28828.8337
+
+LM num: 126
+offer_price = 
+	+ 30359.7575
+
+LM num: 127
+offer_price = 
+	+ 33334.2279
+
+LM num: 128
+offer_price = 
+	+ 26760.3938
+
+LM num: 129
+offer_price = 
+	+ 22947.8381
+
+LM num: 130
+offer_price = 
+	+ 22380.1285
+
+LM num: 131
+offer_price = 
+	+ 24053.8774
+
+LM num: 132
+offer_price = 
+	+ 95595.669
+
+LM num: 133
+offer_price = 
+	+ 96979.6372
+
+LM num: 134
+offer_price = 
+	+ 99393.8774
+
+LM num: 135
+offer_price = 
+	+ 103363.101
+
+LM num: 136
+offer_price = 
+	+ 86962.0056
+
+LM num: 137
+offer_price = 
+	+ 89162.4134
+
+LM num: 138
+offer_price = 
+	+ 83960.243
+
+LM num: 139
+offer_price = 
+	+ 81649.6239
+
+LM num: 140
+offer_price = 
+	+ 82964.1972
+
+LM num: 141
+offer_price = 
+	+ 92968.6409
+
+LM num: 142
+offer_price = 
+	+ 94503.7977
+
+LM num: 143
+offer_price = 
+	+ 87517.022
+
+LM num: 144
+offer_price = 
+	+ 90310.8478
+
+LM num: 145
+offer_price = 
+	+ 109547.2893
+
+LM num: 146
+offer_price = 
+	+ 112284.9535
+
+LM num: 147
+offer_price = 
+	+ 116808.0699
+
+LM num: 148
+offer_price = 
+	+ 119987.9842
+
+LM num: 149
+offer_price = 
+	+ 103765.6026
+
+LM num: 150
+offer_price = 
+	+ 100955.8041
+
+LM num: 151
+offer_price = 
+	+ 106980.2408
+
+LM num: 152
+offer_price = 
+	+ 105994.1167
+
+LM num: 153
+offer_price = 
+	+ 104985.7505
+
+LM num: 154
+offer_price = 
+	+ 108186.514
+
+LM num: 155
+offer_price = 
+	+ 106781.7458
+
+LM num: 156
+offer_price = 
+	+ 93461.7909
+
+LM num: 157
+offer_price = 
+	+ 95511.9596
+
+LM num: 158
+offer_price = 
+	+ 100111.6371
+
+LM num: 159
+offer_price = 
+	+ 127242.1668
+
+LM num: 160
+offer_price = 
+	+ 129766.1102
+
+LM num: 161
+offer_price = 
+	+ 122214.8074
+
+LM num: 162
+offer_price = 
+	+ 120569.7569
+
+LM num: 163
+offer_price = 
+	+ 124453.8314
+
+LM num: 164
+offer_price = 
+	+ 123964.3776
+
+LM num: 165
+offer_price = 
+	+ 134972.8581
+
+LM num: 166
+offer_price = 
+	+ 137775.4192
+
+LM num: 167
+offer_price = 
+	+ 139725.8425
+
+LM num: 168
+offer_price = 
+	+ 131939.7407
+
+LM num: 169
+offer_price = 
+	+ 130546.8692
+
+LM num: 170
+offer_price = 
+	+ 130077.3265
+
+LM num: 171
+offer_price = 
+	+ 130323.9335
+
+LM num: 172
+offer_price = 
+	+ 130678.5398
+
+LM num: 173
+offer_price = 
+	+ 130378.7219
+
+LM num: 174
+offer_price = 
+	+ 111093.4882
+
+LM num: 175
+offer_price = 
+	+ 109773.8981
+
+LM num: 176
+offer_price = 
+	+ 111365.8909
+
+LM num: 177
+offer_price = 
+	+ 116789.1725
+
+LM num: 178
+offer_price = 
+	+ 117737.736
+
+LM num: 179
+offer_price = 
+	+ 116672.8267
+
+LM num: 180
+offer_price = 
+	+ 118665.4071
+
+LM num: 181
+offer_price = 
+	+ 119300.3108
+
+LM num: 182
+offer_price = 
+	+ 120752.8602
+
+LM num: 183
+offer_price = 
+	+ 146195.8658
+
+LM num: 184
+offer_price = 
+	+ 148282.0483
+
+LM num: 185
+offer_price = 
+	+ 150795.2228
+
+LM num: 186
+offer_price = 
+	+ 155433.604
+
+LM num: 187
+offer_price = 
+	+ 156639.8729
+
+LM num: 188
+offer_price = 
+	+ 155007.0123
+
+LM num: 189
+offer_price = 
+	+ 160259.3632
+
+LM num: 190
+offer_price = 
+	+ 135322.4313
+
+LM num: 191
+offer_price = 
+	+ 134525.1593
+
+LM num: 192
+offer_price = 
+	+ 128662.121
+
+LM num: 193
+offer_price = 
+	+ 131200.8753
+
+LM num: 194
+offer_price = 
+	+ 130550.0783
+
+LM num: 195
+offer_price = 
+	+ 141270.6743
+
+LM num: 196
+offer_price = 
+	+ 141781.5965
+
+LM num: 197
+offer_price = 
+	+ 136956.9919
+
+LM num: 198
+offer_price = 
+	+ 75775.2771
+
+LM num: 199
+offer_price = 
+	+ 78654.7801
+
+LM num: 200
+offer_price = 
+	+ 81601.8693
+
+LM num: 201
+offer_price = 
+	+ 69146.9162
+
+LM num: 202
+offer_price = 
+	+ 71488.2262
+
+LM num: 203
+offer_price = 
+	+ 70341.1215
+
+LM num: 204
+offer_price = 
+	+ 66767.0293
+
+LM num: 205
+offer_price = 
+	+ 76400.1816
+
+LM num: 206
+offer_price = 
+	+ 77849.3088
+
+LM num: 207
+offer_price = 
+	+ 75293.328
+
+LM num: 208
+offer_price = 
+	+ 72804.8056
+
+LM num: 209
+offer_price = 
+	+ 74241.0198
+
+LM num: 210
+offer_price = 
+	+ 89406.0819
+
+LM num: 211
+offer_price = 
+	+ 85582.6472
+
+LM num: 212
+offer_price = 
+	+ 87953.1386
+
+LM num: 213
+offer_price = 
+	+ 80196.017
+
+LM num: 214
+offer_price = 
+	+ 82188.64
+
+LM num: 215
+offer_price = 
+	+ 78100.062
+
+LM num: 216
+offer_price = 
+	+ 60580.5071
+
+LM num: 217
+offer_price = 
+	+ 62106.6054
+
+LM num: 218
+offer_price = 
+	+ 59446.8442
+
+LM num: 219
+offer_price = 
+	+ 57274.7031
+
+LM num: 220
+offer_price = 
+	+ 65315.941
+
+LM num: 221
+offer_price = 
+	+ 69057.4991
+
+LM num: 222
+offer_price = 
+	+ 67486.0831
+
+LM num: 223
+offer_price = 
+	+ 71094.9715
+
+LM num: 224
+offer_price = 
+	+ 69847.5587
+
+LM num: 225
+offer_price = 
+	+ 71277.8229
+
+LM num: 226
+offer_price = 
+	+ 63216.7197
+
+LM num: 227
+offer_price = 
+	+ 63352.76
+
+LM num: 228
+offer_price = 
+	+ 63932.6378
+
+LM num: 229
+offer_price = 
+	+ 66689.2941
+
+LM num: 230
+offer_price = 
+	+ 51423.5562
+
+LM num: 231
+offer_price = 
+	+ 55335.5756
+
+LM num: 232
+offer_price = 
+	+ 57150.2069
+
+LM num: 233
+offer_price = 
+	+ 51605.5181
+
+LM num: 234
+offer_price = 
+	+ 51495.4982
+
+LM num: 235
+offer_price = 
+	+ 51473.8663
+
+LM num: 236
+offer_price = 
+	+ 51885.1365
+
+LM num: 237
+offer_price = 
+	+ 51327.3716
+
+LM num: 238
+offer_price = 
+	+ 53108.7661
+
+LM num: 239
+offer_price = 
+	+ 41882.2895
+
+LM num: 240
+offer_price = 
+	+ 43642.6831
+
+LM num: 241
+offer_price = 
+	+ 43069.9763
+
+LM num: 242
+offer_price = 
+	+ 39746.8364
+
+LM num: 243
+offer_price = 
+	+ 40856.7156
+
+LM num: 244
+offer_price = 
+	+ 99675.7473
+
+LM num: 245
+offer_price = 
+	+ 96960.3979
+
+LM num: 246
+offer_price = 
+	+ 95319.467
+
+LM num: 247
+offer_price = 
+	+ 100280.6792
+
+LM num: 248
+offer_price = 
+	+ 99137.8551
+
+LM num: 249
+offer_price = 
+	+ 97890.7695
+
+LM num: 250
+offer_price = 
+	+ 104962.2906
+
+LM num: 251
+offer_price = 
+	+ 107937.8705
+
+LM num: 252
+offer_price = 
+	+ 108981.3133
+
+LM num: 253
+offer_price = 
+	+ 102933.9479
+
+LM num: 254
+offer_price = 
+	+ 101591.4542
+
+LM num: 255
+offer_price = 
+	+ 103445.3704
+
+LM num: 256
+offer_price = 
+	+ 89876.7097
+
+LM num: 257
+offer_price = 
+	+ 88888.1328
+
+LM num: 258
+offer_price = 
+	+ 90503.2097
+
+LM num: 259
+offer_price = 
+	+ 93940.9708
+
+LM num: 260
+offer_price = 
+	+ 91825.4539
+
+LM num: 261
+offer_price = 
+	+ 86031.1339
+
+LM num: 262
+offer_price = 
+	+ 86790.1101
+
+LM num: 263
+offer_price = 
+	+ 88555.7604
+
+LM num: 264
+offer_price = 
+	+ 97985.3114
+
+LM num: 265
+offer_price = 
+	+ 99136.8946
+
+LM num: 266
+offer_price = 
+	+ 99496.8847
+
+LM num: 267
+offer_price = 
+	+ 98629.3715
+
+LM num: 268
+offer_price = 
+	+ 94144.0357
+
+LM num: 269
+offer_price = 
+	+ 95885.5083
+
+LM num: 270
+offer_price = 
+	+ 116145.2932
+
+LM num: 271
+offer_price = 
+	+ 117524.0771
+
+LM num: 272
+offer_price = 
+	+ 118426.0473
+
+LM num: 273
+offer_price = 
+	+ 126601.4031
+
+LM num: 274
+offer_price = 
+	+ 124076.4231
+
+LM num: 275
+offer_price = 
+	+ 125375.3621
+
+LM num: 276
+offer_price = 
+	+ 108419.6916
+
+LM num: 277
+offer_price = 
+	+ 106724.5921
+
+LM num: 278
+offer_price = 
+	+ 107541.9126
+
+LM num: 279
+offer_price = 
+	+ 103354.3096
+
+LM num: 280
+offer_price = 
+	+ 102128.0722
+
+LM num: 281
+offer_price = 
+	+ 113910.3847
+
+LM num: 282
+offer_price = 
+	+ 114118.9811
+
+LM num: 283
+offer_price = 
+	+ 116446.5247
+
+LM num: 284
+offer_price = 
+	+ 116594.6286
+
+LM num: 285
+offer_price = 
+	+ 115873.679
+
+LM num: 286
+offer_price = 
+	+ 116396.5288
+
+LM num: 287
+offer_price = 
+	+ 108167.367
+
+LM num: 288
+offer_price = 
+	+ 107754.0559
+
+LM num: 289
+offer_price = 
+	+ 110250.7285
+
+LM num: 290
+offer_price = 
+	+ 78657.3932
+
+LM num: 291
+offer_price = 
+	+ 76769.7066
+
+LM num: 292
+offer_price = 
+	+ 81203.7533
+
+LM num: 293
+offer_price = 
+	+ 78582.3172
+
+LM num: 294
+offer_price = 
+	+ 79711.1458
+
+LM num: 295
+offer_price = 
+	+ 90412.8636
+
+LM num: 296
+offer_price = 
+	+ 93821.9087
+
+LM num: 297
+offer_price = 
+	+ 96026.2403
+
+LM num: 298
+offer_price = 
+	+ 96730.7101
+
+LM num: 299
+offer_price = 
+	+ 86994.6019
+
+LM num: 300
+offer_price = 
+	+ 87412.4579
+
+LM num: 301
+offer_price = 
+	+ 86921.0726
+
+LM num: 302
+offer_price = 
+	+ 88736.9559
+
+LM num: 303
+offer_price = 
+	+ 86002.8286
+
+LM num: 304
+offer_price = 
+	+ 89151.0262
+
+LM num: 305
+offer_price = 
+	+ 90635.4783
+
+LM num: 306
+offer_price = 
+	+ 90296.9625
+
+LM num: 307
+offer_price = 
+	+ 91487.2025
+
+LM num: 308
+offer_price = 
+	+ 91378.1576
+
+LM num: 309
+offer_price = 
+	+ 71435.9888
+
+LM num: 310
+offer_price = 
+	+ 72412.4868
+
+LM num: 311
+offer_price = 
+	+ 70084.465
+
+LM num: 312
+offer_price = 
+	+ 68839.887
+
+LM num: 313
+offer_price = 
+	+ 70401.3189
+
+LM num: 314
+offer_price = 
+	+ 70144.5047
+
+LM num: 315
+offer_price = 
+	+ 61004.6815
+
+LM num: 316
+offer_price = 
+	+ 55998.4432
+
+LM num: 317
+offer_price = 
+	+ 79909.3704
+
+LM num: 318
+offer_price = 
+	+ 80016.4939
+
+LM num: 319
+offer_price = 
+	+ 79441.9648
+
+LM num: 320
+offer_price = 
+	+ 78374.7908
+
+LM num: 321
+offer_price = 
+	+ 79604.4528
+
+LM num: 322
+offer_price = 
+	+ 85114.427
+
+LM num: 323
+offer_price = 
+	+ 73881.8555
+
+LM num: 324
+offer_price = 
+	+ 72603.7827
+
+LM num: 325
+offer_price = 
+	+ 72294.2634
+
+LM num: 326
+offer_price = 
+	+ 72175.6508
+
+LM num: 327
+offer_price = 
+	+ 72308.8074
+
+LM num: 328
+offer_price = 
+	+ 73624.2361
+
+LM num: 329
+offer_price = 
+	+ 173217.1255
+
+LM num: 330
+offer_price = 
+	+ 175765.2827
+
+LM num: 331
+offer_price = 
+	+ 184259.2552
+
+LM num: 332
+offer_price = 
+	+ 183644.1226
+
+LM num: 333
+offer_price = 
+	+ 186516.5926
+
+LM num: 334
+offer_price = 
+	+ 185611.6845
+
+LM num: 335
+offer_price = 
+	+ 193345.0785
+
+LM num: 336
+offer_price = 
+	+ 195078.3998
+
+LM num: 337
+offer_price = 
+	+ 190043.9471
+
+LM num: 338
+offer_price = 
+	+ 152274.2055
+
+LM num: 339
+offer_price = 
+	+ 152052.977
+
+LM num: 340
+offer_price = 
+	+ 149707.026
+
+LM num: 341
+offer_price = 
+	+ 144287.6171
+
+LM num: 342
+offer_price = 
+	+ 145309.4124
+
+LM num: 343
+offer_price = 
+	+ 159233.0217
+
+LM num: 344
+offer_price = 
+	+ 159666.0901
+
+LM num: 345
+offer_price = 
+	+ 156104.8961
+
+LM num: 346
+offer_price = 
+	+ 156503.8187
+
+LM num: 347
+offer_price = 
+	+ 157484.6922
+
+LM num: 348
+offer_price = 
+	+ 153810.3937
+
+LM num: 349
+offer_price = 
+	+ 171451.4152
+
+LM num: 350
+offer_price = 
+	+ 170996.2357
+
+LM num: 351
+offer_price = 
+	+ 172785.2164
+
+LM num: 352
+offer_price = 
+	+ 173414.9799
+
+LM num: 353
+offer_price = 
+	+ 166722.7166
+
+LM num: 354
+offer_price = 
+	+ 169288.8296
+
+LM num: 355
+offer_price = 
+	+ 163548.7113
+
+LM num: 356
+offer_price = 
+	+ 165176.5691
+
+LM num: 357
+offer_price = 
+	+ 212286.0245
+
+LM num: 358
+offer_price = 
+	+ 212627.0922
+
+LM num: 359
+offer_price = 
+	+ 213392.4661
+
+LM num: 360
+offer_price = 
+	+ 213685.6047
+
+LM num: 361
+offer_price = 
+	+ 218618.8569
+
+LM num: 362
+offer_price = 
+	+ 219400.3581
+
+LM num: 363
+offer_price = 
+	+ 217084.2117
+
+LM num: 364
+offer_price = 
+	+ 210297.9008
+
+LM num: 365
+offer_price = 
+	+ 211429.3848
+
+LM num: 366
+offer_price = 
+	+ 230649.3749
+
+LM num: 367
+offer_price = 
+	+ 231369.6009
+
+LM num: 368
+offer_price = 
+	+ 234698.7904
+
+LM num: 369
+offer_price = 
+	+ 235787.7674
+
+LM num: 370
+offer_price = 
+	+ 236234.7922
+
+LM num: 371
+offer_price = 
+	+ 226680.5995
+
+LM num: 372
+offer_price = 
+	+ 228150.2681
+
+LM num: 373
+offer_price = 
+	+ 249360.7415
+
+LM num: 374
+offer_price = 
+	+ 248281.8462
+
+LM num: 375
+offer_price = 
+	+ 246265.2786
+
+LM num: 376
+offer_price = 
+	+ 246127.5217
+
+LM num: 377
+offer_price = 
+	+ 252463.9698
+
+LM num: 378
+offer_price = 
+	+ 198497.075
+
+LM num: 379
+offer_price = 
+	+ 197388.0223
+
+LM num: 380
+offer_price = 
+	+ 197960.9503
+
+LM num: 381
+offer_price = 
+	+ 199625.5691
+
+LM num: 382
+offer_price = 
+	+ 199034.1509
+
+LM num: 383
+offer_price = 
+	+ 198823.3318
+
+LM num: 384
+offer_price = 
+	+ 206850.9219
+
+LM num: 385
+offer_price = 
+	+ 207186.7667
+
+LM num: 386
+offer_price = 
+	+ 207323.4334
+
+LM num: 387
+offer_price = 
+	+ 204469.1113
+
+LM num: 388
+offer_price = 
+	+ 204686.2616
+
+LM num: 389
+offer_price = 
+	+ 183083.0974
+
+LM num: 390
+offer_price = 
+	+ 181873.9822
+
+LM num: 391
+offer_price = 
+	+ 186810.4805
+
+LM num: 392
+offer_price = 
+	+ 184533.4257
+
+LM num: 393
+offer_price = 
+	+ 192571.1184
+
+LM num: 394
+offer_price = 
+	+ 194039.5526
+
+LM num: 395
+offer_price = 
+	+ 193693.7617
+
+LM num: 396
+offer_price = 
+	+ 191686.4099
+
+LM num: 397
+offer_price = 
+	+ 197407.0423
+
+LM num: 398
+offer_price = 
+	+ 198267.8121
+
+LM num: 399
+offer_price = 
+	+ 195086.3174
+
+LM num: 400
+offer_price = 
+	+ 211805.9497
+
+LM num: 401
+offer_price = 
+	+ 209806.6854
+
+LM num: 402
+offer_price = 
+	+ 220753.601
+
+LM num: 403
+offer_price = 
+	+ 221598.5878
+
+LM num: 404
+offer_price = 
+	+ 218578.2478
+
+LM num: 405
+offer_price = 
+	+ 136506.607
+
+LM num: 406
+offer_price = 
+	+ 138118.2987
+
+LM num: 407
+offer_price = 
+	+ 139245.5759
+
+LM num: 408
+offer_price = 
+	+ 131145.3791
+
+LM num: 409
+offer_price = 
+	+ 129603.0315
+
+LM num: 410
+offer_price = 
+	+ 129649.845
+
+LM num: 411
+offer_price = 
+	+ 129571.3268
+
+LM num: 412
+offer_price = 
+	+ 128901.1445
+
+LM num: 413
+offer_price = 
+	+ 132225.3877
+
+LM num: 414
+offer_price = 
+	+ 131609.3125
+
+LM num: 415
+offer_price = 
+	+ 131118.3048
+
+LM num: 416
+offer_price = 
+	+ 146399.6831
+
+LM num: 417
+offer_price = 
+	+ 149412.311
+
+LM num: 418
+offer_price = 
+	+ 149590.6333
+
+LM num: 419
+offer_price = 
+	+ 149188.3975
+
+LM num: 420
+offer_price = 
+	+ 140217.5411
+
+LM num: 421
+offer_price = 
+	+ 138152.1887
+
+LM num: 422
+offer_price = 
+	+ 137806.2553
+
+LM num: 423
+offer_price = 
+	+ 138054.3009
+
+LM num: 424
+offer_price = 
+	+ 139442.3909
+
+LM num: 425
+offer_price = 
+	+ 122210.7686
+
+LM num: 426
+offer_price = 
+	+ 123400.005
+
+LM num: 427
+offer_price = 
+	+ 123304.1583
+
+LM num: 428
+offer_price = 
+	+ 123346.7406
+
+LM num: 429
+offer_price = 
+	+ 123966.4964
+
+LM num: 430
+offer_price = 
+	+ 119820.6347
+
+LM num: 431
+offer_price = 
+	+ 128182.7973
+
+LM num: 432
+offer_price = 
+	+ 162124.5623
+
+LM num: 433
+offer_price = 
+	+ 162404.6121
+
+LM num: 434
+offer_price = 
+	+ 163878.3371
+
+LM num: 435
+offer_price = 
+	+ 163995.9063
+
+LM num: 436
+offer_price = 
+	+ 163222.8869
+
+LM num: 437
+offer_price = 
+	+ 159909.6748
+
+LM num: 438
+offer_price = 
+	+ 160419.5031
+
+LM num: 439
+offer_price = 
+	+ 163305.2751
+
+LM num: 440
+offer_price = 
+	+ 156166.7929
+
+LM num: 441
+offer_price = 
+	+ 158273.5227
+
+LM num: 442
+offer_price = 
+	+ 148744.8606
+
+LM num: 443
+offer_price = 
+	+ 149593.6479
+
+LM num: 444
+offer_price = 
+	+ 149825.026
+
+LM num: 445
+offer_price = 
+	+ 149699.4335
+
+LM num: 446
+offer_price = 
+	+ 144565.0234
+
+LM num: 447
+offer_price = 
+	+ 144391.8025
+
+LM num: 448
+offer_price = 
+	+ 145266.2709
+
+LM num: 449
+offer_price = 
+	+ 145268.2377
+
+LM num: 450
+offer_price = 
+	+ 153225.3889
+
+LM num: 451
+offer_price = 
+	+ 152299.344
+
+LM num: 452
+offer_price = 
+	+ 155376.5904
+
+LM num: 453
+offer_price = 
+	+ 181361.8078
+
+LM num: 454
+offer_price = 
+	+ 180595.7274
+
+LM num: 455
+offer_price = 
+	+ 183825.8691
+
+LM num: 456
+offer_price = 
+	+ 183002.3016
+
+LM num: 457
+offer_price = 
+	+ 183439.0744
+
+LM num: 458
+offer_price = 
+	+ 183549.0724
+
+LM num: 459
+offer_price = 
+	+ 183521.6154
+
+LM num: 460
+offer_price = 
+	+ 167666.0731
+
+LM num: 461
+offer_price = 
+	+ 168067.5015
+
+LM num: 462
+offer_price = 
+	+ 163106.5701
+
+LM num: 463
+offer_price = 
+	+ 164181.8172
+
+LM num: 464
+offer_price = 
+	+ 174388.7121
+
+LM num: 465
+offer_price = 
+	+ 174859.3562
+
+LM num: 466
+offer_price = 
+	+ 176891.3122
+
+LM num: 467
+offer_price = 
+	+ 169900.2066
+
+LM num: 468
+offer_price = 
+	+ 171256.993
+
+LM num: 469
+offer_price = 
+	+ 101689.2989
+
+LM num: 470
+offer_price = 
+	+ 101394.7819
+
+LM num: 471
+offer_price = 
+	+ 101484.7907
+
+LM num: 472
+offer_price = 
+	+ 101117.8657
+
+LM num: 473
+offer_price = 
+	+ 100028.1978
+
+LM num: 474
+offer_price = 
+	+ 106134.3664
+
+LM num: 475
+offer_price = 
+	+ 106169.222
+
+LM num: 476
+offer_price = 
+	+ 105523.7858
+
+LM num: 477
+offer_price = 
+	+ 103674.9932
+
+LM num: 478
+offer_price = 
+	+ 102737.1526
+
+LM num: 479
+offer_price = 
+	+ 91238.7917
+
+LM num: 480
+offer_price = 
+	+ 91360.5911
+
+LM num: 481
+offer_price = 
+	+ 91374.9926
+
+LM num: 482
+offer_price = 
+	+ 91434.9313
+
+LM num: 483
+offer_price = 
+	+ 89180.3975
+
+LM num: 484
+offer_price = 
+	+ 79209.3182
+
+LM num: 485
+offer_price = 
+	+ 125478.7874
+
+LM num: 486
+offer_price = 
+	+ 127282.8717
+
+LM num: 487
+offer_price = 
+	+ 118801.5529
+
+LM num: 488
+offer_price = 
+	+ 122338.2166
+
+LM num: 489
+offer_price = 
+	+ 139906.9289
+
+LM num: 490
+offer_price = 
+	+ 141993.1141
+
+LM num: 491
+offer_price = 
+	+ 142032.5372
+
+LM num: 492
+offer_price = 
+	+ 141653.9341
+
+LM num: 493
+offer_price = 
+	+ 132276.3683
+
+LM num: 494
+offer_price = 
+	+ 137886.127
+
+LM num: 495
+offer_price = 
+	+ 135256.8168
+
+LM num: 496
+offer_price = 
+	+ 135582.5321
+
+LM num: 497
+offer_price = 
+	+ 111222.1225
+
+LM num: 498
+offer_price = 
+	+ 109035.6928
+
+LM num: 499
+offer_price = 
+	+ 105699.0384
+
+LM num: 500
+offer_price = 
+	+ 103856.1958
+
+LM num: 501
+offer_price = 
+	+ 102347.0618
+
+LM num: 502
+offer_price = 
+	+ 286701.845
+
+LM num: 503
+offer_price = 
+	+ 291890.6352
+
+LM num: 504
+offer_price = 
+	+ 272019.4426
+
+LM num: 505
+offer_price = 
+	+ 272828.5657
+
+LM num: 506
+offer_price = 
+	+ 278000.2727
+
+LM num: 507
+offer_price = 
+	+ 277172.7371
+
+LM num: 508
+offer_price = 
+	+ 251082.7221
+
+LM num: 509
+offer_price = 
+	+ 252281.8874
+
+LM num: 510
+offer_price = 
+	+ 253631.6509
+
+LM num: 511
+offer_price = 
+	+ 260819.2291
+
+LM num: 512
+offer_price = 
+	+ 261461.0974
+
+LM num: 513
+offer_price = 
+	+ 256164.4699
+
+LM num: 514
+offer_price = 
+	+ 306608.0055
+
+LM num: 515
+offer_price = 
+	+ 310517.7605
+
+LM num: 516
+offer_price = 
+	+ 309043.1542
+
+LM num: 517
+offer_price = 
+	+ 307613.1639
+
+LM num: 518
+offer_price = 
+	+ 327563.0505
+
+LM num: 519
+offer_price = 
+	+ 302603.5041
+
+LM num: 520
+offer_price = 
+	+ 312000.9849
+
+LM num: 521
+offer_price = 
+	+ 311864.0541
+
+LM num: 522
+offer_price = 
+	+ 312543.6745
+
+LM num: 523
+offer_price = 
+	+ 304674.6666
+
+LM num: 524
+offer_price = 
+	+ 304610.0387
+
+LM num: 525
+offer_price = 
+	+ 304497.5623
+
+LM num: 526
+offer_price = 
+	+ 304484.7057
+
+LM num: 527
+offer_price = 
+	+ 304563.6046
+
+LM num: 528
+offer_price = 
+	+ 270514.1879
+
+LM num: 529
+offer_price = 
+	+ 272305.749
+
+LM num: 530
+offer_price = 
+	+ 277441.0585
+
+LM num: 531
+offer_price = 
+	+ 279398.1345
+
+LM num: 532
+offer_price = 
+	+ 271820.7463
+
+LM num: 533
+offer_price = 
+	+ 214697.0095
+
+LM num: 534
+offer_price = 
+	+ 214630.8868
+
+LM num: 535
+offer_price = 
+	+ 215711.4947
+
+LM num: 536
+offer_price = 
+	+ 208653.8729
+
+LM num: 537
+offer_price = 
+	+ 204084.2002
+
+LM num: 538
+offer_price = 
+	+ 205470.894
+
+LM num: 539
+offer_price = 
+	+ 236397.1049
+
+LM num: 540
+offer_price = 
+	+ 236766.7341
+
+LM num: 541
+offer_price = 
+	+ 236223.8855
+
+LM num: 542
+offer_price = 
+	+ 239513.0487
+
+LM num: 543
+offer_price = 
+	+ 239408.6
+
+LM num: 544
+offer_price = 
+	+ 229753.8576
+
+LM num: 545
+offer_price = 
+	+ 229861.7383
+
+LM num: 546
+offer_price = 
+	+ 229900.8291
+
+LM num: 547
+offer_price = 
+	+ 228815.8315
+
+LM num: 548
+offer_price = 
+	+ 226375.2949
+
+LM num: 549
+offer_price = 
+	+ 225417.2762
+
+LM num: 550
+offer_price = 
+	+ 225199.7616
+
+LM num: 551
+offer_price = 
+	+ 231706.0911
+
+LM num: 552
+offer_price = 
+	+ 171361.1808
+
+LM num: 553
+offer_price = 
+	+ 169361.227
+
+LM num: 554
+offer_price = 
+	+ 169049.2672
+
+LM num: 555
+offer_price = 
+	+ 162483.6979
+
+LM num: 556
+offer_price = 
+	+ 161699.9888
+
+LM num: 557
+offer_price = 
+	+ 186837.6508
+
+LM num: 558
+offer_price = 
+	+ 191676.1772
+
+LM num: 559
+offer_price = 
+	+ 190383.3962
+
+LM num: 560
+offer_price = 
+	+ 189784.3208
+
+LM num: 561
+offer_price = 
+	+ 315738.645
+
+LM num: 562
+offer_price = 
+	+ 288731.2569
+
+LM num: 563
+offer_price = 
+	+ 287053.6174
+
+LM num: 564
+offer_price = 
+	+ 286973.8481
+
+LM num: 565
+offer_price = 
+	+ 286339.938
+
+LM num: 566
+offer_price = 
+	+ 276361.4541
+
+LM num: 567
+offer_price = 
+	+ 276145.8602
+
+LM num: 568
+offer_price = 
+	+ 279542.7986
+
+LM num: 569
+offer_price = 
+	+ 409373.2363
+
+LM num: 570
+offer_price = 
+	+ 416373.6767
+
+LM num: 571
+offer_price = 
+	+ 372333.5305
+
+LM num: 572
+offer_price = 
+	+ 380647.8055
+
+LM num: 573
+offer_price = 
+	+ 351176.4612
+
+LM num: 574
+offer_price = 
+	+ 370916.4935
+
+LM num: 575
+offer_price = 
+	+ 370318.2206
+
+LM num: 576
+offer_price = 
+	+ 497394.8913
+
+LM num: 577
+offer_price = 
+	+ 503026.7663
+
+LM num: 578
+offer_price = 
+	+ 501181.5355
+
+LM num: 579
+offer_price = 
+	+ 498722.1269
+
+LM num: 580
+offer_price = 
+	+ 473894.864
+
+LM num: 581
+offer_price = 
+	+ 472479.4736
+
+Number of Rules : 581
+
+Time taken to build model: 1.79 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9973
+Mean absolute error                   1114.1958
+Root mean squared error               2657.7637
+Relative absolute error                  5.1207 %
+Root relative squared error              7.4138 %
+Total Number of Instances           177909     
+
